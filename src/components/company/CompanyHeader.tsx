@@ -1,0 +1,44 @@
+import React from 'react'
+import { CompanyData } from '../../types/company'
+import { ProfitabilityBadge } from './ProfitabilityBadge'
+import { formatCurrency, formatDate } from '../../utils/formatters'
+
+interface CompanyHeaderProps {
+  company: CompanyData
+}
+
+export const CompanyHeader: React.FC<CompanyHeaderProps> = ({ company }) => {
+  return (
+    <div className="bg-white border-b border-slate-200 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Company Name and Ticker */}
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h1 className="text-4xl font-semibold text-slate-900">
+              {company.companyName}
+            </h1>
+            <div className="flex items-center gap-3 mt-2 text-slate-600">
+              <span className="text-lg font-medium">{company.ticker}</span>
+              <span className="text-slate-400">|</span>
+              <span className="text-base">{company.industry}</span>
+            </div>
+          </div>
+          <div className="text-right">
+            <div className="text-sm text-slate-500">Share Price</div>
+            <div className="text-2xl font-mono text-slate-900">
+              {formatCurrency(company.currentSharePrice, company.currency)}
+            </div>
+            <div className="text-xs text-slate-400 mt-1">
+              Updated {formatDate(company.lastUpdated)}
+            </div>
+          </div>
+        </div>
+
+        {/* Profitability Badge */}
+        <div className="mt-4">
+          <ProfitabilityBadge profitability={company.profitability} size="large" />
+        </div>
+      </div>
+    </div>
+  )
+}

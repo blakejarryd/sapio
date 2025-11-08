@@ -1,4 +1,4 @@
-import { CompanyData } from '../types/company'
+import { CompanyData, CompanySearchResult } from '../types/company'
 
 const API_BASE_URL = '/api'
 const SIMULATED_LATENCY = 500 // milliseconds
@@ -8,15 +8,6 @@ const SIMULATED_LATENCY = 500 // milliseconds
  */
 async function simulateLatency(): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, SIMULATED_LATENCY))
-}
-
-/**
- * Company search result
- */
-export interface CompanySearchResult {
-  ticker: string
-  companyName: string
-  exchange: string
 }
 
 /**

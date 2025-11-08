@@ -1,0 +1,98 @@
+{
+  "ticker": "GOOGL",
+  "companyName": "Alphabet Inc.",
+  "exchange": "NASDAQ",
+  "currency": "USD",
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "metrics": {
+    "marketCap": {
+      "value": 1820000000000,
+      "displayValue": "$1.8T",
+      "description": "The total value of all company shares",
+      "historical": [
+        { "year": 2020, "value": 1184000000000 },
+        { "year": 2021, "value": 1920000000000 },
+        { "year": 2022, "value": 1160000000000 },
+        { "year": 2023, "value": 1710000000000 },
+        { "year": 2024, "value": 1820000000000 }
+      ]
+    },
+    "revenue": {
+      "value": 307394000000,
+      "displayValue": "$307.4B",
+      "description": "Total money the company earned from sales",
+      "historical": [
+        { "year": 2020, "value": 182527000000 },
+        { "year": 2021, "value": 257637000000 },
+        { "year": 2022, "value": 282836000000 },
+        { "year": 2023, "value": 307394000000 },
+        { "year": 2024, "value": 307394000000 }
+      ]
+    },
+    "salesGrowth": {
+      "value": 8.7,
+      "displayValue": "+8.7%",
+      "description": "How much sales increased compared to last year",
+      "industryAverage": 12.1,
+      "historical": [
+        { "year": 2020, "value": 12.8 },
+        { "year": 2021, "value": 41.2 },
+        { "year": 2022, "value": 9.8 },
+        { "year": 2023, "value": 8.7 },
+        { "year": 2024, "value": 8.7 }
+      ]
+    },
+    "netIncome": {
+      "value": 73795000000,
+      "displayValue": "$73.8B",
+      "description": "The profit left after all expenses",
+      "historical": [
+        { "year": 2020, "value": 40269000000 },
+        { "year": 2021, "value": 76033000000 },
+        { "year": 2022, "value": 59972000000 },
+        { "year": 2023, "value": 73795000000 },
+        { "year": 2024, "value": 73795000000 }
+      ]
+    },
+    "profitMargin": {
+      "value": 24.0,
+      "displayValue": "24.0%",
+      "description": "What percentage of sales becomes profit",
+      "industryAverage": 25.3,
+      "historical": [
+        { "year": 2020, "value": 22.1 },
+        { "year": 2021, "value": 29.5 },
+        { "year": 2022, "value": 21.2 },
+        { "year": 2023, "value": 24.0 },
+        { "year": 2024, "value": 24.0 }
+      ]
+    },
+    "totalDebt": {
+      "value": 13253000000,
+      "displayValue": "$13.3B",
+      "description": "Total money the company owes",
+      "historical": [
+        { "year": 2020, "value": 14817000000 },
+        { "year": 2021, "value": 14817000000 },
+        { "year": 2022, "value": 14701000000 },
+        { "year": 2023, "value": 13253000000 },
+        { "year": 2024, "value": 13253000000 }
+      ]
+    },
+    "peRatio": {
+      "value": 24.7,
+      "displayValue": "24.7",
+      "description": "How much investors pay for each dollar of earnings",
+      "industryAverage": 28.1,
+      "historical": [
+        { "year": 2020, "value": 29.4 },
+        { "year": 2021, "value": 25.3 },
+        { "year": 2022, "value": 19.3 },
+        { "year": 2023, "value": 23.2 },
+        { "year": 2024, "value": 24.7 }
+      ]
+    }
+  }
+}

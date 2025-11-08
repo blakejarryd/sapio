@@ -1,0 +1,98 @@
+{
+  "ticker": "MSFT",
+  "companyName": "Microsoft Corporation",
+  "exchange": "NASDAQ",
+  "currency": "USD",
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "metrics": {
+    "marketCap": {
+      "value": 2810000000000,
+      "displayValue": "$2.8T",
+      "description": "The total value of all company shares",
+      "historical": [
+        { "year": 2020, "value": 1680000000000 },
+        { "year": 2021, "value": 2520000000000 },
+        { "year": 2022, "value": 1870000000000 },
+        { "year": 2023, "value": 2810000000000 },
+        { "year": 2024, "value": 2810000000000 }
+      ]
+    },
+    "revenue": {
+      "value": 211915000000,
+      "displayValue": "$211.9B",
+      "description": "Total money the company earned from sales",
+      "historical": [
+        { "year": 2020, "value": 143015000000 },
+        { "year": 2021, "value": 168088000000 },
+        { "year": 2022, "value": 198270000000 },
+        { "year": 2023, "value": 211915000000 },
+        { "year": 2024, "value": 211915000000 }
+      ]
+    },
+    "salesGrowth": {
+      "value": 6.9,
+      "displayValue": "+6.9%",
+      "description": "How much sales increased compared to last year",
+      "industryAverage": 14.8,
+      "historical": [
+        { "year": 2020, "value": 13.6 },
+        { "year": 2021, "value": 17.5 },
+        { "year": 2022, "value": 18.0 },
+        { "year": 2023, "value": 6.9 },
+        { "year": 2024, "value": 6.9 }
+      ]
+    },
+    "netIncome": {
+      "value": 72361000000,
+      "displayValue": "$72.4B",
+      "description": "The profit left after all expenses",
+      "historical": [
+        { "year": 2020, "value": 44281000000 },
+        { "year": 2021, "value": 61271000000 },
+        { "year": 2022, "value": 72738000000 },
+        { "year": 2023, "value": 72361000000 },
+        { "year": 2024, "value": 72361000000 }
+      ]
+    },
+    "profitMargin": {
+      "value": 34.1,
+      "displayValue": "34.1%",
+      "description": "What percentage of sales becomes profit",
+      "industryAverage": 28.6,
+      "historical": [
+        { "year": 2020, "value": 31.0 },
+        { "year": 2021, "value": 36.5 },
+        { "year": 2022, "value": 36.7 },
+        { "year": 2023, "value": 34.1 },
+        { "year": 2024, "value": 34.1 }
+      ]
+    },
+    "totalDebt": {
+      "value": 42990000000,
+      "displayValue": "$43.0B",
+      "description": "Total money the company owes",
+      "historical": [
+        { "year": 2020, "value": 63340000000 },
+        { "year": 2021, "value": 58154000000 },
+        { "year": 2022, "value": 47032000000 },
+        { "year": 2023, "value": 42990000000 },
+        { "year": 2024, "value": 42990000000 }
+      ]
+    },
+    "peRatio": {
+      "value": 38.8,
+      "displayValue": "38.8",
+      "description": "How much investors pay for each dollar of earnings",
+      "industryAverage": 28.6,
+      "historical": [
+        { "year": 2020, "value": 37.9 },
+        { "year": 2021, "value": 41.1 },
+        { "year": 2022, "value": 25.7 },
+        { "year": 2023, "value": 38.8 },
+        { "year": 2024, "value": 38.8 }
+      ]
+    }
+  }
+}

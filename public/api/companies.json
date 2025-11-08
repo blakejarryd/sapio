@@ -1,0 +1,27 @@
+[
+  {
+    "ticker": "TSLA",
+    "companyName": "Tesla, Inc.",
+    "exchange": "NASDAQ"
+  },
+  {
+    "ticker": "AAPL",
+    "companyName": "Apple Inc.",
+    "exchange": "NASDAQ"
+  },
+  {
+    "ticker": "MSFT",
+    "companyName": "Microsoft Corporation",
+    "exchange": "NASDAQ"
+  },
+  {
+    "ticker": "GOOGL",
+    "companyName": "Alphabet Inc.",
+    "exchange": "NASDAQ"
+  },
+  {
+    "ticker": "AMZN",
+    "companyName": "Amazon.com, Inc.",
+    "exchange": "NASDAQ"
+  }
+]

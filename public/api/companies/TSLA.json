@@ -1,0 +1,98 @@
+{
+  "ticker": "TSLA",
+  "companyName": "Tesla, Inc.",
+  "exchange": "NASDAQ",
+  "currency": "USD",
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "metrics": {
+    "marketCap": {
+      "value": 789500000000,
+      "displayValue": "$789.5B",
+      "description": "The total value of all company shares",
+      "historical": [
+        { "year": 2020, "value": 669000000000 },
+        { "year": 2021, "value": 1056000000000 },
+        { "year": 2022, "value": 386000000000 },
+        { "year": 2023, "value": 789000000000 },
+        { "year": 2024, "value": 789500000000 }
+      ]
+    },
+    "revenue": {
+      "value": 96773000000,
+      "displayValue": "$96.8B",
+      "description": "Total money the company earned from sales",
+      "historical": [
+        { "year": 2020, "value": 31536000000 },
+        { "year": 2021, "value": 53823000000 },
+        { "year": 2022, "value": 81462000000 },
+        { "year": 2023, "value": 96773000000 },
+        { "year": 2024, "value": 96773000000 }
+      ]
+    },
+    "salesGrowth": {
+      "value": 18.8,
+      "displayValue": "+18.8%",
+      "description": "How much sales increased compared to last year",
+      "industryAverage": 5.3,
+      "historical": [
+        { "year": 2020, "value": 28.3 },
+        { "year": 2021, "value": 70.7 },
+        { "year": 2022, "value": 51.4 },
+        { "year": 2023, "value": 18.8 },
+        { "year": 2024, "value": 18.8 }
+      ]
+    },
+    "netIncome": {
+      "value": 14974000000,
+      "displayValue": "$15.0B",
+      "description": "The profit left after all expenses",
+      "historical": [
+        { "year": 2020, "value": 721000000 },
+        { "year": 2021, "value": 5519000000 },
+        { "year": 2022, "value": 12556000000 },
+        { "year": 2023, "value": 14974000000 },
+        { "year": 2024, "value": 14974000000 }
+      ]
+    },
+    "profitMargin": {
+      "value": 15.5,
+      "displayValue": "15.5%",
+      "description": "What percentage of sales becomes profit",
+      "industryAverage": 7.9,
+      "historical": [
+        { "year": 2020, "value": 2.3 },
+        { "year": 2021, "value": 10.3 },
+        { "year": 2022, "value": 15.4 },
+        { "year": 2023, "value": 15.5 },
+        { "year": 2024, "value": 15.5 }
+      ]
+    },
+    "totalDebt": {
+      "value": 5250000000,
+      "displayValue": "$5.3B",
+      "description": "Total money the company owes",
+      "historical": [
+        { "year": 2020, "value": 11634000000 },
+        { "year": 2021, "value": 9556000000 },
+        { "year": 2022, "value": 6916000000 },
+        { "year": 2023, "value": 5250000000 },
+        { "year": 2024, "value": 5250000000 }
+      ]
+    },
+    "peRatio": {
+      "value": 52.7,
+      "displayValue": "52.7",
+      "description": "How much investors pay for each dollar of earnings",
+      "industryAverage": 15.2,
+      "historical": [
+        { "year": 2020, "value": 928.1 },
+        { "year": 2021, "value": 191.4 },
+        { "year": 2022, "value": 30.7 },
+        { "year": 2023, "value": 52.7 },
+        { "year": 2024, "value": 52.7 }
+      ]
+    }
+  }
+}

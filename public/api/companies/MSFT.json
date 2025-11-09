@@ -5,94 +5,167 @@
   "currency": "USD",
   "lastUpdated": "2025-01-15T00:00:00Z",
   "sector": "Technology",
-  "industry": "Software - Infrastructure",
-  "metrics": {
-    "marketCap": {
-      "value": 2810000000000,
-      "displayValue": "$2.8T",
-      "description": "The total value of all company shares",
-      "historical": [
-        { "year": 2020, "value": 1680000000000 },
-        { "year": 2021, "value": 2520000000000 },
-        { "year": 2022, "value": 1870000000000 },
-        { "year": 2023, "value": 2810000000000 },
-        { "year": 2024, "value": 2810000000000 }
-      ]
+  "industry": "Software",
+  "currentSharePrice": 378.90,
+  "marketCap": 2820000000000,
+  "sharesOutstanding": 7440000000,
+  "businessModel": {
+    "description": "Microsoft develops,  licenses, and supports software products, services, and devices. The company generates revenue through cloud computing services (Azure), productivity software (Office 365), business applications (Dynamics), gaming (Xbox), and LinkedIn. Microsoft operates a highly scalable software-as-a-service model with strong recurring revenue.",
+    "founded": 1975,
+    "headquarters": "Redmond, Washington, USA",
+    "employees": 221000,
+    "markets": ["North America", "Europe", "Asia Pacific", "Latin America", "Middle East & Africa"],
+    "revenueStreams": [
+      {
+        "name": "Intelligent Cloud (Azure)",
+        "description": "Cloud computing platform and services",
+        "percentageOfRevenue": 42
+      },
+      {
+        "name": "Productivity and Business Processes",
+        "description": "Office 365, LinkedIn, Dynamics 365",
+        "percentageOfRevenue": 34
+      },
+      {
+        "name": "More Personal Computing",
+        "description": "Windows, Xbox, Surface devices, Search advertising",
+        "percentageOfRevenue": 24
+      }
+    ],
+    "keyProducts": [
+      {
+        "name": "Azure",
+        "description": "Cloud computing platform competing with AWS and Google Cloud"
+      },
+      {
+        "name": "Office 365",
+        "description": "Subscription-based productivity suite (Word, Excel, PowerPoint, Teams)"
+      },
+      {
+        "name": "Windows",
+        "description": "Operating system for PCs and enterprise"
+      },
+      {
+        "name": "LinkedIn",
+        "description": "Professional networking platform"
+      },
+      {
+        "name": "Xbox",
+        "description": "Gaming console and Game Pass subscription service"
+      }
+    ]
+  },
+  "financials": [
+    {
+      "year": 2015,
+      "revenue": 93580000000,
+      "earnings": 12193000000,
+      "operatingCashFlow": 29080000000,
+      "totalAssets": 174472000000,
+      "totalLiabilities": 95625000000,
+      "shareholderEquity": 78847000000
     },
-    "revenue": {
-      "value": 211915000000,
-      "displayValue": "$211.9B",
-      "description": "Total money the company earned from sales",
-      "historical": [
-        { "year": 2020, "value": 143015000000 },
-        { "year": 2021, "value": 168088000000 },
-        { "year": 2022, "value": 198270000000 },
-        { "year": 2023, "value": 211915000000 },
-        { "year": 2024, "value": 211915000000 }
-      ]
+    {
+      "year": 2016,
+      "revenue": 85320000000,
+      "earnings": 16798000000,
+      "operatingCashFlow": 33325000000,
+      "totalAssets": 193468000000,
+      "totalLiabilities": 110721000000,
+      "shareholderEquity": 82747000000
     },
-    "salesGrowth": {
-      "value": 6.9,
-      "displayValue": "+6.9%",
-      "description": "How much sales increased compared to last year",
-      "industryAverage": 14.8,
-      "historical": [
-        { "year": 2020, "value": 13.6 },
-        { "year": 2021, "value": 17.5 },
-        { "year": 2022, "value": 18.0 },
-        { "year": 2023, "value": 6.9 },
-        { "year": 2024, "value": 6.9 }
-      ]
+    {
+      "year": 2017,
+      "revenue": 89950000000,
+      "earnings": 21204000000,
+      "operatingCashFlow": 39507000000,
+      "totalAssets": 241086000000,
+      "totalLiabilities": 161839000000,
+      "shareholderEquity": 79247000000
     },
-    "netIncome": {
-      "value": 72361000000,
-      "displayValue": "$72.4B",
-      "description": "The profit left after all expenses",
-      "historical": [
-        { "year": 2020, "value": 44281000000 },
-        { "year": 2021, "value": 61271000000 },
-        { "year": 2022, "value": 72738000000 },
-        { "year": 2023, "value": 72361000000 },
-        { "year": 2024, "value": 72361000000 }
-      ]
+    {
+      "year": 2018,
+      "revenue": 110360000000,
+      "earnings": 16571000000,
+      "operatingCashFlow": 43884000000,
+      "totalAssets": 258848000000,
+      "totalLiabilities": 176130000000,
+      "shareholderEquity": 82718000000
     },
-    "profitMargin": {
-      "value": 34.1,
-      "displayValue": "34.1%",
-      "description": "What percentage of sales becomes profit",
-      "industryAverage": 28.6,
-      "historical": [
-        { "year": 2020, "value": 31.0 },
-        { "year": 2021, "value": 36.5 },
-        { "year": 2022, "value": 36.7 },
-        { "year": 2023, "value": 34.1 },
-        { "year": 2024, "value": 34.1 }
-      ]
+    {
+      "year": 2019,
+      "revenue": 125843000000,
+      "earnings": 39240000000,
+      "operatingCashFlow": 52185000000,
+      "totalAssets": 286556000000,
+      "totalLiabilities": 184226000000,
+      "shareholderEquity": 102330000000
     },
-    "totalDebt": {
-      "value": 42990000000,
-      "displayValue": "$43.0B",
-      "description": "Total money the company owes",
-      "historical": [
-        { "year": 2020, "value": 63340000000 },
-        { "year": 2021, "value": 58154000000 },
-        { "year": 2022, "value": 47032000000 },
-        { "year": 2023, "value": 42990000000 },
-        { "year": 2024, "value": 42990000000 }
-      ]
+    {
+      "year": 2020,
+      "revenue": 143015000000,
+      "earnings": 44281000000,
+      "operatingCashFlow": 60675000000,
+      "totalAssets": 301311000000,
+      "totalLiabilities": 191791000000,
+      "shareholderEquity": 109520000000
     },
-    "peRatio": {
-      "value": 38.8,
-      "displayValue": "38.8",
-      "description": "How much investors pay for each dollar of earnings",
-      "industryAverage": 28.6,
-      "historical": [
-        { "year": 2020, "value": 37.9 },
-        { "year": 2021, "value": 41.1 },
-        { "year": 2022, "value": 25.7 },
-        { "year": 2023, "value": 38.8 },
-        { "year": 2024, "value": 38.8 }
-      ]
+    {
+      "year": 2021,
+      "revenue": 168088000000,
+      "earnings": 61271000000,
+      "operatingCashFlow": 76740000000,
+      "totalAssets": 333779000000,
+      "totalLiabilities": 191973000000,
+      "shareholderEquity": 141806000000
+    },
+    {
+      "year": 2022,
+      "revenue": 198270000000,
+      "earnings": 72738000000,
+      "operatingCashFlow": 89035000000,
+      "totalAssets": 364840000000,
+      "totalLiabilities": 198298000000,
+      "shareholderEquity": 166542000000
+    },
+    {
+      "year": 2023,
+      "revenue": 211915000000,
+      "earnings": 72361000000,
+      "operatingCashFlow": 87582000000,
+      "totalAssets": 411976000000,
+      "totalLiabilities": 205753000000,
+      "shareholderEquity": 206223000000
+    },
+    {
+      "year": 2024,
+      "revenue": 245000000000,
+      "earnings": 88000000000,
+      "operatingCashFlow": 105000000000,
+      "totalAssets": 450000000000,
+      "totalLiabilities": 215000000000,
+      "shareholderEquity": 235000000000
     }
-  }
+  ],
+  "profitability": {
+    "status": "profitable",
+    "consecutiveYears": 10,
+    "profitableSince": 2015
+  },
+  "cashFlow": {
+    "status": "generative",
+    "fiveYearTotal": 445032000000,
+    "currency": "USD"
+  },
+  "capitalRaises": [
+    {
+      "date": "1986-03-13",
+      "type": "IPO",
+      "amountRaised": 61000000,
+      "sharesBefore": 0,
+      "sharesAfter": 280000000,
+      "currency": "USD"
+    }
+  ],
+  "currentDebtToEquity": 0.09
 }

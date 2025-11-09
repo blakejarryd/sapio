@@ -1,0 +1,168 @@
+{
+  "ticker": "A2M",
+  "companyName": "The a2 Milk Company Limited",
+  "exchange": "ASX",
+  "currency": "AUD",
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "sector": "Consumer Defensive",
+  "industry": "Packaged Foods",
+  "currentSharePrice": 6.85,
+  "marketCap": 5000000000,
+  "sharesOutstanding": 730000000,
+  "businessModel": {
+    "description": "The a2 Milk Company markets fresh milk, infant formula, and nutritional products containing only the A2 beta-casein protein. The company sources milk from specially selected cows, processes it, and sells branded products through retailers and e-commerce. A2M was heavily reliant on Chinese infant formula demand which collapsed, showing the risks of customer concentration and single-market dependency.",
+    "founded": 2000,
+    "headquarters": "Sydney, New South Wales, Australia",
+    "employees": 650,
+    "markets": ["Australia", "New Zealand", "China", "United States"],
+    "revenueStreams": [
+      {
+        "name": "Infant nutrition (China)",
+        "description": "Infant formula sold in China and through cross-border e-commerce",
+        "percentageOfRevenue": 45
+      },
+      {
+        "name": "Fresh milk (Australia/NZ)",
+        "description": "A2 fresh milk in supermarkets",
+        "percentageOfRevenue": 35
+      },
+      {
+        "name": "Infant nutrition (Australia/NZ)",
+        "description": "Infant formula in domestic markets",
+        "percentageOfRevenue": 12
+      },
+      {
+        "name": "Other markets",
+        "description": "United States and emerging markets",
+        "percentageOfRevenue": 8
+      }
+    ],
+    "keyProducts": [
+      {
+        "name": "a2 Milk",
+        "description": "Fresh milk containing only A2 protein"
+      },
+      {
+        "name": "a2 Platinum Infant Formula",
+        "description": "Premium infant formula for Chinese market"
+      },
+      {
+        "name": "a2 Growing Up Milk",
+        "description": "Toddler nutrition products"
+      }
+    ]
+  },
+  "financials": [
+    {
+      "year": 2015,
+      "revenue": 289000000,
+      "earnings": 47000000,
+      "operatingCashFlow": 62000000,
+      "totalAssets": 345000000,
+      "totalLiabilities": 125000000,
+      "shareholderEquity": 220000000
+    },
+    {
+      "year": 2016,
+      "revenue": 549000000,
+      "earnings": 93000000,
+      "operatingCashFlow": 128000000,
+      "totalAssets": 612000000,
+      "totalLiabilities": 189000000,
+      "shareholderEquity": 423000000
+    },
+    {
+      "year": 2017,
+      "revenue": 922000000,
+      "earnings": 192000000,
+      "operatingCashFlow": 234000000,
+      "totalAssets": 987000000,
+      "totalLiabilities": 267000000,
+      "shareholderEquity": 720000000
+    },
+    {
+      "year": 2018,
+      "revenue": 1281000000,
+      "earnings": 277000000,
+      "operatingCashFlow": 312000000,
+      "totalAssets": 1456000000,
+      "totalLiabilities": 378000000,
+      "shareholderEquity": 1078000000
+    },
+    {
+      "year": 2019,
+      "revenue": 1730000000,
+      "earnings": 386000000,
+      "operatingCashFlow": 423000000,
+      "totalAssets": 1923000000,
+      "totalLiabilities": 456000000,
+      "shareholderEquity": 1467000000
+    },
+    {
+      "year": 2020,
+      "revenue": 1730000000,
+      "earnings": 289000000,
+      "operatingCashFlow": 356000000,
+      "totalAssets": 1845000000,
+      "totalLiabilities": 412000000,
+      "shareholderEquity": 1433000000
+    },
+    {
+      "year": 2021,
+      "revenue": 1210000000,
+      "earnings": -35000000,
+      "operatingCashFlow": 89000000,
+      "totalAssets": 1634000000,
+      "totalLiabilities": 378000000,
+      "shareholderEquity": 1256000000
+    },
+    {
+      "year": 2022,
+      "revenue": 1297000000,
+      "earnings": 143000000,
+      "operatingCashFlow": 187000000,
+      "totalAssets": 1567000000,
+      "totalLiabilities": 345000000,
+      "shareholderEquity": 1222000000
+    },
+    {
+      "year": 2023,
+      "revenue": 1524000000,
+      "earnings": 221000000,
+      "operatingCashFlow": 278000000,
+      "totalAssets": 1689000000,
+      "totalLiabilities": 367000000,
+      "shareholderEquity": 1322000000
+    },
+    {
+      "year": 2024,
+      "revenue": 1650000000,
+      "earnings": 256000000,
+      "operatingCashFlow": 312000000,
+      "totalAssets": 1780000000,
+      "totalLiabilities": 380000000,
+      "shareholderEquity": 1400000000
+    }
+  ],
+  "profitability": {
+    "status": "intermittent",
+    "profitableYearsCount": 9,
+    "totalYears": 10
+  },
+  "cashFlow": {
+    "status": "generative",
+    "fiveYearTotal": 1222000000,
+    "currency": "AUD"
+  },
+  "capitalRaises": [
+    {
+      "date": "2004-03-25",
+      "type": "IPO",
+      "amountRaised": 27000000,
+      "sharesBefore": 0,
+      "sharesAfter": 180000000,
+      "currency": "AUD"
+    }
+  ],
+  "currentDebtToEquity": 0.03
+}

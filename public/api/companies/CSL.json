@@ -1,0 +1,172 @@
+{
+  "ticker": "CSL",
+  "companyName": "CSL Limited",
+  "exchange": "ASX",
+  "currency": "AUD",
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "sector": "Healthcare",
+  "industry": "Biotechnology",
+  "currentSharePrice": 295.40,
+  "marketCap": 140000000000,
+  "sharesOutstanding": 474000000,
+  "businessModel": {
+    "description": "CSL is a global biotechnology company specializing in plasma-derived and recombinant therapies. The company collects blood plasma from donors, processes it into life-saving therapies for rare and serious diseases, and sells these products globally. CSL also manufactures influenza vaccines through its Seqirus division.",
+    "founded": 1916,
+    "headquarters": "Melbourne, Victoria, Australia",
+    "employees": 32000,
+    "markets": ["Global - operates in 35+ countries"],
+    "revenueStreams": [
+      {
+        "name": "Immunoglobulins",
+        "description": "Antibody treatments for immune deficiencies and autoimmune disorders",
+        "percentageOfRevenue": 48
+      },
+      {
+        "name": "Albumin",
+        "description": "Blood plasma protein for critical care and surgery",
+        "percentageOfRevenue": 18
+      },
+      {
+        "name": "Specialty products",
+        "description": "Haemophilia treatments and other rare disease therapies",
+        "percentageOfRevenue": 18
+      },
+      {
+        "name": "Seqirus (vaccines)",
+        "description": "Influenza vaccines for seasonal and pandemic flu",
+        "percentageOfRevenue": 16
+      }
+    ],
+    "keyProducts": [
+      {
+        "name": "Privigen/Hizentra",
+        "description": "Immunoglobulin therapies for immune disorders"
+      },
+      {
+        "name": "Albumex",
+        "description": "Human albumin for critical care"
+      },
+      {
+        "name": "Idelvion/Afstyla",
+        "description": "Recombinant therapies for haemophilia"
+      },
+      {
+        "name": "Flu Vaccines",
+        "description": "Cell-based and egg-based influenza vaccines"
+      }
+    ]
+  },
+  "financials": [
+    {
+      "year": 2015,
+      "revenue": 8066000000,
+      "earnings": 1561000000,
+      "operatingCashFlow": 2089000000,
+      "totalAssets": 16253000000,
+      "totalLiabilities": 8476000000,
+      "shareholderEquity": 7777000000
+    },
+    {
+      "year": 2016,
+      "revenue": 8736000000,
+      "earnings": 1691000000,
+      "operatingCashFlow": 2234000000,
+      "totalAssets": 17892000000,
+      "totalLiabilities": 9126000000,
+      "shareholderEquity": 8766000000
+    },
+    {
+      "year": 2017,
+      "revenue": 9251000000,
+      "earnings": 1809000000,
+      "operatingCashFlow": 2456000000,
+      "totalAssets": 27435000000,
+      "totalLiabilities": 15762000000,
+      "shareholderEquity": 11673000000
+    },
+    {
+      "year": 2018,
+      "revenue": 10321000000,
+      "earnings": 2033000000,
+      "operatingCashFlow": 2701000000,
+      "totalAssets": 29874000000,
+      "totalLiabilities": 16853000000,
+      "shareholderEquity": 13021000000
+    },
+    {
+      "year": 2019,
+      "revenue": 11569000000,
+      "earnings": 2347000000,
+      "operatingCashFlow": 3124000000,
+      "totalAssets": 32456000000,
+      "totalLiabilities": 18234000000,
+      "shareholderEquity": 14222000000
+    },
+    {
+      "year": 2020,
+      "revenue": 12845000000,
+      "earnings": 2784000000,
+      "operatingCashFlow": 3567000000,
+      "totalAssets": 36892000000,
+      "totalLiabilities": 20456000000,
+      "shareholderEquity": 16436000000
+    },
+    {
+      "year": 2021,
+      "revenue": 14234000000,
+      "earnings": 3102000000,
+      "operatingCashFlow": 3945000000,
+      "totalAssets": 39567000000,
+      "totalLiabilities": 21345000000,
+      "shareholderEquity": 18222000000
+    },
+    {
+      "year": 2022,
+      "revenue": 15961000000,
+      "earnings": 3423000000,
+      "operatingCashFlow": 4234000000,
+      "totalAssets": 42345000000,
+      "totalLiabilities": 22678000000,
+      "shareholderEquity": 19667000000
+    },
+    {
+      "year": 2023,
+      "revenue": 17890000000,
+      "earnings": 3789000000,
+      "operatingCashFlow": 4678000000,
+      "totalAssets": 46234000000,
+      "totalLiabilities": 24123000000,
+      "shareholderEquity": 22111000000
+    },
+    {
+      "year": 2024,
+      "revenue": 19500000000,
+      "earnings": 4100000000,
+      "operatingCashFlow": 5100000000,
+      "totalAssets": 50000000000,
+      "totalLiabilities": 26000000000,
+      "shareholderEquity": 24000000000
+    }
+  ],
+  "profitability": {
+    "status": "profitable",
+    "consecutiveYears": 10,
+    "profitableSince": 2015
+  },
+  "cashFlow": {
+    "status": "generative",
+    "fiveYearTotal": 21524000000,
+    "currency": "AUD"
+  },
+  "capitalRaises": [
+    {
+      "date": "1994-05-27",
+      "type": "IPO",
+      "amountRaised": 299000000,
+      "sharesBefore": 0,
+      "sharesAfter": 200000000,
+      "currency": "AUD"
+    }
+  ],
+  "currentDebtToEquity": 0.08
+}

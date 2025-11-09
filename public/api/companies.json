@@ -32,6 +32,41 @@
     "companyName": "Amazon.com, Inc.",
     "exchange": "NASDAQ",
     "industry": "E-commerce & Cloud Computing",
+    "profitabilityStatus": "intermittent"
+  },
+  {
+    "ticker": "CBA",
+    "companyName": "Commonwealth Bank of Australia",
+    "exchange": "ASX",
+    "industry": "Banking",
     "profitabilityStatus": "profitable"
+  },
+  {
+    "ticker": "BHP",
+    "companyName": "BHP Group Limited",
+    "exchange": "ASX",
+    "industry": "Mining",
+    "profitabilityStatus": "intermittent"
+  },
+  {
+    "ticker": "CSL",
+    "companyName": "CSL Limited",
+    "exchange": "ASX",
+    "industry": "Biotechnology",
+    "profitabilityStatus": "profitable"
+  },
+  {
+    "ticker": "WOW",
+    "companyName": "Woolworths Group Limited",
+    "exchange": "ASX",
+    "industry": "Retail - Supermarkets",
+    "profitabilityStatus": "profitable"
+  },
+  {
+    "ticker": "A2M",
+    "companyName": "The a2 Milk Company Limited",
+    "exchange": "ASX",
+    "industry": "Packaged Foods",
+    "profitabilityStatus": "intermittent"
   }
 ]

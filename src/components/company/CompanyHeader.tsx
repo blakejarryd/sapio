@@ -17,8 +17,11 @@ export const CompanyHeader: React.FC<CompanyHeaderProps> = ({ company }) => {
             <h1 className="text-4xl font-semibold text-slate-900">
               {company.companyName}
             </h1>
-            <div className="flex items-center gap-3 mt-2 text-slate-600">
+            <div className="flex items-center gap-3 mt-2 text-slate-600 flex-wrap">
               <span className="text-lg font-medium">{company.ticker}</span>
+              <span className="px-2 py-0.5 text-xs font-semibold rounded bg-slate-100 text-slate-700">
+                {company.exchange}
+              </span>
               <span className="text-slate-400">|</span>
               <span className="text-base">{company.industry}</span>
             </div>

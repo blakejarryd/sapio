@@ -6,93 +6,171 @@
   "lastUpdated": "2025-01-15T00:00:00Z",
   "sector": "Technology",
   "industry": "Consumer Electronics",
-  "metrics": {
-    "marketCap": {
-      "value": 2920000000000,
-      "displayValue": "$2.9T",
-      "description": "The total value of all company shares",
-      "historical": [
-        { "year": 2020, "value": 2260000000000 },
-        { "year": 2021, "value": 2910000000000 },
-        { "year": 2022, "value": 2080000000000 },
-        { "year": 2023, "value": 2920000000000 },
-        { "year": 2024, "value": 2920000000000 }
-      ]
+  "currentSharePrice": 185.50,
+  "marketCap": 2850000000000,
+  "sharesOutstanding": 15370000000,
+  "businessModel": {
+    "description": "Apple designs, manufactures, and markets consumer electronics, software, and services. The company sells premium smartphones, computers, tablets, and wearables through its retail stores and online channels. Apple generates significant recurring revenue through its services ecosystem including the App Store, iCloud, Apple Music, and AppleCare.",
+    "founded": 1976,
+    "headquarters": "Cupertino, California, USA",
+    "employees": 161000,
+    "markets": ["North America", "Europe", "Greater China", "Japan", "Rest of Asia Pacific"],
+    "revenueStreams": [
+      {
+        "name": "iPhone sales",
+        "description": "Premium smartphone hardware and accessories",
+        "percentageOfRevenue": 52
+      },
+      {
+        "name": "Services",
+        "description": "App Store, subscriptions, advertising, AppleCare, and licensing",
+        "percentageOfRevenue": 22
+      },
+      {
+        "name": "Mac and iPad",
+        "description": "Personal computers and tablets",
+        "percentageOfRevenue": 16
+      },
+      {
+        "name": "Wearables and Accessories",
+        "description": "Apple Watch, AirPods, HomePod, and accessories",
+        "percentageOfRevenue": 10
+      }
+    ],
+    "keyProducts": [
+      {
+        "name": "iPhone",
+        "description": "Premium smartphone line with annual refresh cycle"
+      },
+      {
+        "name": "Mac",
+        "description": "Desktop and laptop computers with Apple Silicon chips"
+      },
+      {
+        "name": "iPad",
+        "description": "Tablet computers for productivity and entertainment"
+      },
+      {
+        "name": "Apple Watch",
+        "description": "Smartwatch and health monitoring device"
+      },
+      {
+        "name": "Services",
+        "description": "App Store, iCloud, Apple Music, Apple TV+, and other subscriptions"
+      }
+    ]
+  },
+  "financials": [
+    {
+      "year": 2015,
+      "revenue": 233715000000,
+      "earnings": 53394000000,
+      "operatingCashFlow": 81266000000,
+      "totalAssets": 290345000000,
+      "totalLiabilities": 171124000000,
+      "shareholderEquity": 119221000000
     },
-    "revenue": {
-      "value": 383285000000,
-      "displayValue": "$383.3B",
-      "description": "Total money the company earned from sales",
-      "historical": [
-        { "year": 2020, "value": 274515000000 },
-        { "year": 2021, "value": 365817000000 },
-        { "year": 2022, "value": 394328000000 },
-        { "year": 2023, "value": 383285000000 },
-        { "year": 2024, "value": 383285000000 }
-      ]
+    {
+      "year": 2016,
+      "revenue": 215639000000,
+      "earnings": 45687000000,
+      "operatingCashFlow": 65824000000,
+      "totalAssets": 321686000000,
+      "totalLiabilities": 193437000000,
+      "shareholderEquity": 128249000000
     },
-    "salesGrowth": {
-      "value": -2.8,
-      "displayValue": "-2.8%",
-      "description": "How much sales increased compared to last year",
-      "industryAverage": 7.2,
-      "historical": [
-        { "year": 2020, "value": 5.5 },
-        { "year": 2021, "value": 33.3 },
-        { "year": 2022, "value": 7.8 },
-        { "year": 2023, "value": -2.8 },
-        { "year": 2024, "value": -2.8 }
-      ]
+    {
+      "year": 2017,
+      "revenue": 229234000000,
+      "earnings": 48351000000,
+      "operatingCashFlow": 63598000000,
+      "totalAssets": 375319000000,
+      "totalLiabilities": 241272000000,
+      "shareholderEquity": 134047000000
     },
-    "netIncome": {
-      "value": 96995000000,
-      "displayValue": "$97.0B",
-      "description": "The profit left after all expenses",
-      "historical": [
-        { "year": 2020, "value": 57411000000 },
-        { "year": 2021, "value": 94680000000 },
-        { "year": 2022, "value": 99803000000 },
-        { "year": 2023, "value": 96995000000 },
-        { "year": 2024, "value": 96995000000 }
-      ]
+    {
+      "year": 2018,
+      "revenue": 265595000000,
+      "earnings": 59531000000,
+      "operatingCashFlow": 77434000000,
+      "totalAssets": 365725000000,
+      "totalLiabilities": 258578000000,
+      "shareholderEquity": 107147000000
     },
-    "profitMargin": {
-      "value": 25.3,
-      "displayValue": "25.3%",
-      "description": "What percentage of sales becomes profit",
-      "industryAverage": 15.4,
-      "historical": [
-        { "year": 2020, "value": 20.9 },
-        { "year": 2021, "value": 25.9 },
-        { "year": 2022, "value": 25.3 },
-        { "year": 2023, "value": 25.3 },
-        { "year": 2024, "value": 25.3 }
-      ]
+    {
+      "year": 2019,
+      "revenue": 260174000000,
+      "earnings": 55256000000,
+      "operatingCashFlow": 69391000000,
+      "totalAssets": 338516000000,
+      "totalLiabilities": 248028000000,
+      "shareholderEquity": 90488000000
     },
-    "totalDebt": {
-      "value": 106630000000,
-      "displayValue": "$106.6B",
-      "description": "Total money the company owes",
-      "historical": [
-        { "year": 2020, "value": 112436000000 },
-        { "year": 2021, "value": 124719000000 },
-        { "year": 2022, "value": 120069000000 },
-        { "year": 2023, "value": 106630000000 },
-        { "year": 2024, "value": 106630000000 }
-      ]
+    {
+      "year": 2020,
+      "revenue": 274515000000,
+      "earnings": 57411000000,
+      "operatingCashFlow": 80674000000,
+      "totalAssets": 323888000000,
+      "totalLiabilities": 258549000000,
+      "shareholderEquity": 65339000000
     },
-    "peRatio": {
-      "value": 30.1,
-      "displayValue": "30.1",
-      "description": "How much investors pay for each dollar of earnings",
-      "industryAverage": 27.3,
-      "historical": [
-        { "year": 2020, "value": 39.4 },
-        { "year": 2021, "value": 30.7 },
-        { "year": 2022, "value": 20.8 },
-        { "year": 2023, "value": 30.1 },
-        { "year": 2024, "value": 30.1 }
-      ]
+    {
+      "year": 2021,
+      "revenue": 365817000000,
+      "earnings": 94680000000,
+      "operatingCashFlow": 104038000000,
+      "totalAssets": 351002000000,
+      "totalLiabilities": 287912000000,
+      "shareholderEquity": 63090000000
+    },
+    {
+      "year": 2022,
+      "revenue": 394328000000,
+      "earnings": 99803000000,
+      "operatingCashFlow": 122151000000,
+      "totalAssets": 352755000000,
+      "totalLiabilities": 302083000000,
+      "shareholderEquity": 50672000000
+    },
+    {
+      "year": 2023,
+      "revenue": 383285000000,
+      "earnings": 96995000000,
+      "operatingCashFlow": 110543000000,
+      "totalAssets": 352583000000,
+      "totalLiabilities": 290437000000,
+      "shareholderEquity": 62146000000
+    },
+    {
+      "year": 2024,
+      "revenue": 391000000000,
+      "earnings": 101000000000,
+      "operatingCashFlow": 118000000000,
+      "totalAssets": 365000000000,
+      "totalLiabilities": 295000000000,
+      "shareholderEquity": 70000000000
     }
-  }
+  ],
+  "profitability": {
+    "status": "profitable",
+    "consecutiveYears": 10,
+    "profitableSince": 2015
+  },
+  "cashFlow": {
+    "status": "generative",
+    "fiveYearTotal": 554732000000,
+    "currency": "USD"
+  },
+  "capitalRaises": [
+    {
+      "date": "1980-12-12",
+      "type": "IPO",
+      "amountRaised": 97000000,
+      "sharesBefore": 0,
+      "sharesAfter": 4600000,
+      "currency": "USD"
+    }
+  ],
+  "currentDebtToEquity": 0.42
 }

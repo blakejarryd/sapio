@@ -4,95 +4,173 @@
   "exchange": "NASDAQ",
   "currency": "USD",
   "lastUpdated": "2025-01-15T00:00:00Z",
-  "sector": "Communication Services",
-  "industry": "Internet Content & Information",
-  "metrics": {
-    "marketCap": {
-      "value": 1820000000000,
-      "displayValue": "$1.8T",
-      "description": "The total value of all company shares",
-      "historical": [
-        { "year": 2020, "value": 1184000000000 },
-        { "year": 2021, "value": 1920000000000 },
-        { "year": 2022, "value": 1160000000000 },
-        { "year": 2023, "value": 1710000000000 },
-        { "year": 2024, "value": 1820000000000 }
-      ]
+  "sector": "Technology",
+  "industry": "Internet Services",
+  "currentSharePrice": 140.20,
+  "marketCap": 1750000000000,
+  "sharesOutstanding": 12480000000,
+  "businessModel": {
+    "description": "Alphabet operates Google, the world's largest search engine, and provides digital advertising, cloud computing, and consumer hardware. The company generates 80% of revenue from advertising across Google Search, YouTube, and partner websites. Alphabet also operates Android, Chrome, Google Cloud, and invests in emerging technologies through Other Bets.",
+    "founded": 1998,
+    "headquarters": "Mountain View, California, USA",
+    "employees": 182000,
+    "markets": ["Global - operates in over 190 countries"],
+    "revenueStreams": [
+      {
+        "name": "Google Search and advertising",
+        "description": "Search ads, display ads, AdSense, Ad Manager",
+        "percentageOfRevenue": 58
+      },
+      {
+        "name": "YouTube ads",
+        "description": "Video advertising platform",
+        "percentageOfRevenue": 11
+      },
+      {
+        "name": "Google Cloud",
+        "description": "Cloud computing infrastructure and platform services",
+        "percentageOfRevenue": 11
+      },
+      {
+        "name": "Google Network and other",
+        "description": "Partner websites advertising, Play Store, hardware, subscriptions",
+        "percentageOfRevenue": 20
+      }
+    ],
+    "keyProducts": [
+      {
+        "name": "Google Search",
+        "description": "Dominant search engine with 90%+ market share"
+      },
+      {
+        "name": "YouTube",
+        "description": "Video streaming platform with advertising and subscriptions"
+      },
+      {
+        "name": "Google Cloud",
+        "description": "Cloud infrastructure competing with AWS and Azure"
+      },
+      {
+        "name": "Android",
+        "description": "Mobile operating system powering 70%+ of smartphones globally"
+      },
+      {
+        "name": "Google Workspace",
+        "description": "Productivity suite (Gmail, Docs, Drive, Meet)"
+      }
+    ]
+  },
+  "financials": [
+    {
+      "year": 2015,
+      "revenue": 74989000000,
+      "earnings": 16348000000,
+      "operatingCashFlow": 26024000000,
+      "totalAssets": 147461000000,
+      "totalLiabilities": 28461000000,
+      "shareholderEquity": 119000000000
     },
-    "revenue": {
-      "value": 307394000000,
-      "displayValue": "$307.4B",
-      "description": "Total money the company earned from sales",
-      "historical": [
-        { "year": 2020, "value": 182527000000 },
-        { "year": 2021, "value": 257637000000 },
-        { "year": 2022, "value": 282836000000 },
-        { "year": 2023, "value": 307394000000 },
-        { "year": 2024, "value": 307394000000 }
-      ]
+    {
+      "year": 2016,
+      "revenue": 90272000000,
+      "earnings": 19478000000,
+      "operatingCashFlow": 36036000000,
+      "totalAssets": 167497000000,
+      "totalLiabilities": 30085000000,
+      "shareholderEquity": 137412000000
     },
-    "salesGrowth": {
-      "value": 8.7,
-      "displayValue": "+8.7%",
-      "description": "How much sales increased compared to last year",
-      "industryAverage": 12.1,
-      "historical": [
-        { "year": 2020, "value": 12.8 },
-        { "year": 2021, "value": 41.2 },
-        { "year": 2022, "value": 9.8 },
-        { "year": 2023, "value": 8.7 },
-        { "year": 2024, "value": 8.7 }
-      ]
+    {
+      "year": 2017,
+      "revenue": 110855000000,
+      "earnings": 12662000000,
+      "operatingCashFlow": 37091000000,
+      "totalAssets": 197295000000,
+      "totalLiabilities": 44793000000,
+      "shareholderEquity": 152502000000
     },
-    "netIncome": {
-      "value": 73795000000,
-      "displayValue": "$73.8B",
-      "description": "The profit left after all expenses",
-      "historical": [
-        { "year": 2020, "value": 40269000000 },
-        { "year": 2021, "value": 76033000000 },
-        { "year": 2022, "value": 59972000000 },
-        { "year": 2023, "value": 73795000000 },
-        { "year": 2024, "value": 73795000000 }
-      ]
+    {
+      "year": 2018,
+      "revenue": 136819000000,
+      "earnings": 30736000000,
+      "operatingCashFlow": 47971000000,
+      "totalAssets": 232792000000,
+      "totalLiabilities": 55164000000,
+      "shareholderEquity": 177628000000
     },
-    "profitMargin": {
-      "value": 24.0,
-      "displayValue": "24.0%",
-      "description": "What percentage of sales becomes profit",
-      "industryAverage": 25.3,
-      "historical": [
-        { "year": 2020, "value": 22.1 },
-        { "year": 2021, "value": 29.5 },
-        { "year": 2022, "value": 21.2 },
-        { "year": 2023, "value": 24.0 },
-        { "year": 2024, "value": 24.0 }
-      ]
+    {
+      "year": 2019,
+      "revenue": 161857000000,
+      "earnings": 34343000000,
+      "operatingCashFlow": 54520000000,
+      "totalAssets": 275909000000,
+      "totalLiabilities": 74467000000,
+      "shareholderEquity": 201442000000
     },
-    "totalDebt": {
-      "value": 13253000000,
-      "displayValue": "$13.3B",
-      "description": "Total money the company owes",
-      "historical": [
-        { "year": 2020, "value": 14817000000 },
-        { "year": 2021, "value": 14817000000 },
-        { "year": 2022, "value": 14701000000 },
-        { "year": 2023, "value": 13253000000 },
-        { "year": 2024, "value": 13253000000 }
-      ]
+    {
+      "year": 2020,
+      "revenue": 182527000000,
+      "earnings": 40269000000,
+      "operatingCashFlow": 65124000000,
+      "totalAssets": 319616000000,
+      "totalLiabilities": 97072000000,
+      "shareholderEquity": 222544000000
     },
-    "peRatio": {
-      "value": 24.7,
-      "displayValue": "24.7",
-      "description": "How much investors pay for each dollar of earnings",
-      "industryAverage": 28.1,
-      "historical": [
-        { "year": 2020, "value": 29.4 },
-        { "year": 2021, "value": 25.3 },
-        { "year": 2022, "value": 19.3 },
-        { "year": 2023, "value": 23.2 },
-        { "year": 2024, "value": 24.7 }
-      ]
+    {
+      "year": 2021,
+      "revenue": 257637000000,
+      "earnings": 76033000000,
+      "operatingCashFlow": 91652000000,
+      "totalAssets": 359268000000,
+      "totalLiabilities": 107633000000,
+      "shareholderEquity": 251635000000
+    },
+    {
+      "year": 2022,
+      "revenue": 282836000000,
+      "earnings": 59972000000,
+      "operatingCashFlow": 91495000000,
+      "totalAssets": 365264000000,
+      "totalLiabilities": 115596000000,
+      "shareholderEquity": 249668000000
+    },
+    {
+      "year": 2023,
+      "revenue": 307394000000,
+      "earnings": 73795000000,
+      "operatingCashFlow": 101736000000,
+      "totalAssets": 402392000000,
+      "totalLiabilities": 132484000000,
+      "shareholderEquity": 269908000000
+    },
+    {
+      "year": 2024,
+      "revenue": 335000000000,
+      "earnings": 85000000000,
+      "operatingCashFlow": 115000000000,
+      "totalAssets": 440000000000,
+      "totalLiabilities": 145000000000,
+      "shareholderEquity": 295000000000
     }
-  }
+  ],
+  "profitability": {
+    "status": "profitable",
+    "consecutiveYears": 10,
+    "profitableSince": 2015
+  },
+  "cashFlow": {
+    "status": "generative",
+    "fiveYearTotal": 491007000000,
+    "currency": "USD"
+  },
+  "capitalRaises": [
+    {
+      "date": "2004-08-19",
+      "type": "IPO",
+      "amountRaised": 1670000000,
+      "sharesBefore": 0,
+      "sharesAfter": 272000000,
+      "currency": "USD"
+    }
+  ],
+  "currentDebtToEquity": 0.05
 }

@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-50 text-gray-900 antialiased;
+    @apply bg-white text-slate-900 antialiased;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
@@ -16,68 +16,22 @@
 }
 
 @layer utilities {
-  /* Animated gradient background */
-  .bg-premium-gradient {
-    background: linear-gradient(-45deg, #f0f9ff, #e0f2fe, #ddd6fe, #e0e7ff);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+  /* Minimal shadow for cards */
+  .card-shadow {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
 
-  /* Noise texture overlay */
-  .noise-texture::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    opacity: 0.03;
-    pointer-events: none;
+  /* Subtle hover effect */
+  .hover-lift {
+    transition: transform 0.15s ease;
   }
 
-  /* Glassmorphism effect */
-  .glass {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  .hover-lift:hover {
+    transform: translateY(-1px);
   }
 
-  /* Premium text gradient */
-  .text-gradient {
-    background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  /* Glow effect */
-  .glow {
-    box-shadow: 0 0 20px rgba(14, 165, 233, 0.15),
-                0 0 40px rgba(14, 165, 233, 0.1);
-  }
-
-  /* Breathing animation */
-  .breathe {
-    animation: breathe 4s ease-in-out infinite;
-  }
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes breathe {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.01);
+  /* Number formatting */
+  .font-numeric {
+    font-variant-numeric: tabular-nums;
   }
 }

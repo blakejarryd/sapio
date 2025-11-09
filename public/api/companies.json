@@ -2,26 +2,36 @@
   {
     "ticker": "TSLA",
     "companyName": "Tesla, Inc.",
-    "exchange": "NASDAQ"
+    "exchange": "NASDAQ",
+    "industry": "Automotive Manufacturing",
+    "profitabilityStatus": "profitable"
   },
   {
     "ticker": "AAPL",
     "companyName": "Apple Inc.",
-    "exchange": "NASDAQ"
+    "exchange": "NASDAQ",
+    "industry": "Consumer Electronics",
+    "profitabilityStatus": "profitable"
   },
   {
     "ticker": "MSFT",
     "companyName": "Microsoft Corporation",
-    "exchange": "NASDAQ"
+    "exchange": "NASDAQ",
+    "industry": "Software",
+    "profitabilityStatus": "profitable"
   },
   {
     "ticker": "GOOGL",
     "companyName": "Alphabet Inc.",
-    "exchange": "NASDAQ"
+    "exchange": "NASDAQ",
+    "industry": "Internet Services",
+    "profitabilityStatus": "profitable"
   },
   {
     "ticker": "AMZN",
     "companyName": "Amazon.com, Inc.",
-    "exchange": "NASDAQ"
+    "exchange": "NASDAQ",
+    "industry": "E-commerce & Cloud Computing",
+    "profitabilityStatus": "profitable"
   }
 ]

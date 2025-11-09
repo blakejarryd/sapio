@@ -16,22 +16,112 @@
 }
 
 @layer utilities {
-  /* Minimal shadow for cards */
-  .card-shadow {
+  /* Elevation Shadow System */
+  .shadow-xs {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   }
 
-  /* Subtle hover effect */
+  .shadow-card {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-card-hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-floating {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-inner-soft {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  /* Hover & Interaction Effects */
   .hover-lift {
-    transition: transform 0.15s ease;
+    transition: transform 200ms ease-out, box-shadow 200ms ease-out;
   }
 
   .hover-lift:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
   }
 
-  /* Number formatting */
+  .hover-glow {
+    transition: box-shadow 200ms ease-out;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 0 3px rgba(3, 105, 161, 0.1);
+  }
+
+  /* Number Formatting */
   .font-numeric {
     font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum';
+  }
+
+  .font-numeric-proportional {
+    font-variant-numeric: proportional-nums;
+  }
+
+  /* Typography Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .letter-tight {
+    letter-spacing: -0.02em;
+  }
+
+  .letter-normal {
+    letter-spacing: 0;
+  }
+
+  .letter-wide {
+    letter-spacing: 0.01em;
+  }
+
+  /* Shimmer Loading Effect */
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(
+      to right,
+      #f1f5f9 0%,
+      #e2e8f0 20%,
+      #f1f5f9 40%,
+      #f1f5f9 100%
+    );
+    background-size: 1000px 100%;
+  }
+
+  /* Smooth Transitions */
+  .transition-smooth {
+    transition: all 200ms ease-out;
+  }
+
+  .transition-smooth-slow {
+    transition: all 300ms ease-out;
+  }
+
+  /* Focus Styles */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+  }
+
+  .focus-ring-inset {
+    @apply focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent;
   }
 }

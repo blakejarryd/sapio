@@ -16,12 +16,12 @@ export const Button: React.FC<ButtonProps> = ({
   className = '',
   ...props
 }) => {
-  const baseClasses = 'inline-flex items-center justify-center font-medium rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed'
+  const baseClasses = 'inline-flex items-center justify-center font-semibold rounded-lg transition-smooth disabled:opacity-50 disabled:cursor-not-allowed focus-ring'
 
   const variantClasses = {
-    primary: 'bg-accent text-white hover:bg-accent-hover',
-    secondary: 'border border-slate-300 text-slate-700 hover:bg-slate-50',
-    ghost: 'text-accent hover:bg-slate-50'
+    primary: 'bg-accent text-white hover:bg-accent-hover shadow-xs hover:shadow-card active:shadow-xs',
+    secondary: 'bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 shadow-xs hover:shadow-card active:shadow-xs',
+    ghost: 'text-accent hover:bg-accent-50 active:bg-accent-100'
   }
 
   const sizeClasses = {

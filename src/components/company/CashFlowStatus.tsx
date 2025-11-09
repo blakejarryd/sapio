@@ -75,8 +75,9 @@ export const CashFlowStatus: React.FC<CashFlowStatusProps> = ({
           <BarChart data={chartData}>
             <XAxis
               dataKey="year"
-              tick={{ fill: '#64748b', fontSize: 11 }}
+              tick={{ fill: '#64748b', fontSize: 11, fontWeight: 500 }}
               axisLine={{ stroke: '#cbd5e1' }}
+              tickLine={false}
             />
             <YAxis hide />
             <Tooltip
@@ -84,8 +85,8 @@ export const CashFlowStatus: React.FC<CashFlowStatusProps> = ({
                 if (active && payload && payload.length) {
                   const value = payload[0].value as number
                   return (
-                    <div className="bg-white border border-slate-200 rounded px-3 py-2 shadow-lg">
-                      <div className="text-xs font-medium">
+                    <div className="bg-white border border-slate-200/60 rounded-lg px-3 py-2 shadow-elevated">
+                      <div className="text-sm font-bold font-mono font-numeric">
                         {formatCurrency(value, cashFlow.currency)}
                       </div>
                     </div>
@@ -93,12 +94,13 @@ export const CashFlowStatus: React.FC<CashFlowStatusProps> = ({
                 }
                 return null
               }}
+              cursor={{ fill: 'rgba(148, 163, 184, 0.1)' }}
             />
-            <ReferenceLine y={0} stroke="#94a3b8" />
+            <ReferenceLine y={0} stroke="#64748b" strokeWidth={2} />
             <Bar
               dataKey="cashFlow"
-              fill="#16a34a"
-              radius={[4, 4, 0, 0]}
+              fill="#10b981"
+              radius={[6, 6, 0, 0]}
             />
           </BarChart>
         </ResponsiveContainer>

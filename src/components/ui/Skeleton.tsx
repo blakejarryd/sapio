@@ -8,7 +8,7 @@ interface SkeletonProps {
 export const Skeleton: React.FC<SkeletonProps> = ({ className = '', style }) => {
   return (
     <div
-      className={`animate-pulse bg-slate-200 rounded ${className}`}
+      className={`animate-shimmer rounded ${className}`}
       style={style}
       aria-label="Loading..."
     />
@@ -53,7 +53,7 @@ export const SkeletonCard: React.FC<{ className?: string }> = ({
   className = ''
 }) => {
   return (
-    <div className={`bg-white border border-slate-200 rounded-lg p-6 ${className}`}>
+    <div className={`bg-white border border-slate-200/60 rounded-lg p-6 shadow-card ${className}`}>
       <Skeleton className="h-6 w-1/3 mb-4" />
       <SkeletonText lines={4} />
     </div>

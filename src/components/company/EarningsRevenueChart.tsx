@@ -47,24 +47,24 @@ export const EarningsRevenueChart: React.FC<EarningsRevenueChartProps> = ({
     if (active && payload && payload.length) {
       const data = payload[0].payload
       return (
-        <div className="bg-white border border-slate-200 rounded-lg shadow-lg p-4">
-          <div className="font-semibold text-slate-900 mb-2">{data.year}</div>
-          <div className="space-y-1 text-sm">
-            <div className="flex items-center justify-between gap-4">
-              <span className="text-slate-600">Revenue:</span>
-              <span className="font-mono font-medium text-slate-900">
+        <div className="bg-white border border-slate-200/60 rounded-lg shadow-elevated p-4">
+          <div className="font-bold text-slate-900 mb-3 text-base">{data.year}</div>
+          <div className="space-y-2 text-sm">
+            <div className="flex items-center justify-between gap-6">
+              <span className="text-slate-600 font-medium">Revenue:</span>
+              <span className="font-mono font-semibold text-slate-900 font-numeric">
                 {formatCurrency(data.revenue, currency)}
               </span>
             </div>
-            <div className="flex items-center justify-between gap-4">
-              <span className="text-slate-600">Earnings:</span>
-              <span className={`font-mono font-medium ${data.earnings >= 0 ? 'text-profit' : 'text-loss'}`}>
+            <div className="flex items-center justify-between gap-6">
+              <span className="text-slate-600 font-medium">Earnings:</span>
+              <span className={`font-mono font-semibold font-numeric ${data.earnings >= 0 ? 'text-profit' : 'text-loss'}`}>
                 {formatCurrency(data.earnings, currency)}
               </span>
             </div>
-            <div className="flex items-center justify-between gap-4">
-              <span className="text-slate-600">Profit Margin:</span>
-              <span className="font-mono font-medium text-slate-900">
+            <div className="flex items-center justify-between gap-6 pt-2 border-t border-slate-100">
+              <span className="text-slate-600 font-medium">Margin:</span>
+              <span className={`font-mono font-semibold font-numeric ${data.profitMargin >= 0 ? 'text-profit' : 'text-loss'}`}>
                 {data.profitMargin.toFixed(1)}%
               </span>
             </div>
@@ -117,42 +117,45 @@ export const EarningsRevenueChart: React.FC<EarningsRevenueChartProps> = ({
             data={chartData}
             margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
           >
-            <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+            <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" vertical={false} />
             <XAxis
               dataKey="year"
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#64748b', fontSize: 13, fontWeight: 500 }}
               axisLine={{ stroke: '#cbd5e1' }}
+              tickLine={false}
             />
             <YAxis
               tickFormatter={formatYAxis}
-              tick={{ fill: '#64748b', fontSize: 12 }}
+              tick={{ fill: '#64748b', fontSize: 12, fontWeight: 500 }}
               axisLine={{ stroke: '#cbd5e1' }}
+              tickLine={false}
             />
-            <Tooltip content={<CustomTooltip />} />
+            <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(148, 163, 184, 0.1)' }} />
             <Legend
-              wrapperStyle={{ paddingTop: '20px' }}
-              iconType="square"
+              wrapperStyle={{ paddingTop: '24px', fontSize: '14px', fontWeight: 600 }}
+              iconType="rect"
+              iconSize={12}
             />
-            <ReferenceLine y={0} stroke="#94a3b8" strokeWidth={1} />
+            <ReferenceLine y={0} stroke="#64748b" strokeWidth={2} strokeDasharray="none" />
             <Bar
               dataKey="revenue"
-              fill="#94a3b8"
+              fill="#71717a"
               name="Revenue"
-              radius={[4, 4, 0, 0]}
+              radius={[6, 6, 0, 0]}
+              opacity={0.9}
             />
             <Bar
               dataKey="earnings"
-              fill="#16a34a"
+              fill="#10b981"
               name="Earnings (Profit)"
-              radius={[4, 4, 0, 0]}
+              radius={[6, 6, 0, 0]}
             />
           </BarChart>
         </ResponsiveContainer>
       </div>
 
-      <div className="mt-4 text-xs text-slate-500">
-        Green bars show profit (earnings). Bars below zero indicate losses for that year.
-        Revenue is shown in gray for context.
+      <div className="mt-6 text-sm text-slate-600 bg-slate-50 rounded-lg p-3 border border-slate-200/60">
+        <span className="font-medium">How to read:</span> Green bars show profit (earnings). Bars below zero indicate losses. Revenue (gray) provides context for total income before expenses.
       </div>
     </Card>
   )

@@ -14,9 +14,9 @@ export const StatusIndicator: React.FC<StatusIndicatorProps> = ({
   className = ''
 }) => {
   const colorClasses = {
-    profitable: 'bg-status-profitable',
-    warning: 'bg-status-warning',
-    caution: 'bg-status-caution'
+    profitable: 'bg-profit ring-2 ring-profit/20',
+    warning: 'bg-amber-500 ring-2 ring-amber-500/20',
+    caution: 'bg-loss ring-2 ring-loss/20'
   }
 
   return (
@@ -25,6 +25,7 @@ export const StatusIndicator: React.FC<StatusIndicatorProps> = ({
         inline-block
         rounded-full
         ${colorClasses[type]}
+        shadow-xs
         ${className}
       `}
       style={{ width: `${size}px`, height: `${size}px` }}

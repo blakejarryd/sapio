@@ -164,5 +164,10 @@
       "currency": "AUD"
     }
   ],
-  "currentDebtToEquity": 0.03
+  "currentDebtToEquity": 0.03,
+  "dividends": {
+    "paysDividend": false,
+    "dividendHistory": [],
+    "currency": "AUD"
+  }
 }

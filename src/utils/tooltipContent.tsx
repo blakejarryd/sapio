@@ -155,5 +155,41 @@ export const tooltipContent = {
         The company hasn't started selling products yet. Like buying land before building - purely speculative. Very high risk. These companies survive on capital raises until they can generate revenue.
       </div>
     </div>
+  ),
+
+  dividendYield: (
+    <div>
+      <div className="font-semibold mb-1">Dividend Yield</div>
+      <div className="text-xs leading-relaxed">
+        The annual dividend income you receive per dollar invested, expressed as a percentage. Like rental yield on a property. A 4% dividend yield means you receive $4 per year for every $100 invested.
+      </div>
+    </div>
+  ),
+
+  payoutRatio: (
+    <div>
+      <div className="font-semibold mb-1">Payout Ratio</div>
+      <div className="text-xs leading-relaxed">
+        The percentage of earnings paid out as dividends. A 60% ratio means the company pays 60% of profits to shareholders and reinvests 40% in growth. Lower ratios indicate more room for dividend increases.
+      </div>
+    </div>
+  ),
+
+  dividendConsistency: (
+    <div>
+      <div className="font-semibold mb-1">Payment Consistency</div>
+      <div className="text-xs leading-relaxed">
+        Years of uninterrupted dividend payments. Like a tenant who always pays rent on time. More consecutive years indicates reliable passive income and business stability.
+      </div>
+    </div>
+  ),
+
+  dividendGrowth: (
+    <div>
+      <div className="font-semibold mb-1">Dividend Growth</div>
+      <div className="text-xs leading-relaxed">
+        How fast dividends have grown over time. Like annual rent increases. Positive growth means your income stream is increasing, helping offset inflation.
+      </div>
+    </div>
   )
 }

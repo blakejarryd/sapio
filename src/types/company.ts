@@ -64,6 +64,24 @@ export interface CashFlowInfo {
   currency: string
 }
 
+// Dividend payment record
+export interface AnnualDividend {
+  year: number
+  dividendPerShare: number
+  currency: string
+}
+
+// Dividend summary information
+export interface DividendInfo {
+  paysDividend: boolean
+  currentYield?: number  // Current annual dividend / share price (as percentage)
+  dividendHistory: AnnualDividend[]  // 10-year history
+  payoutRatio?: number  // Dividends / Earnings (as percentage)
+  dividendGrowthCAGR?: number  // 10-year CAGR of dividends
+  consecutiveYears?: number  // Years of consecutive dividend payments
+  currency: string
+}
+
 // Company data structure
 export interface CompanyData {
   // Basic info
@@ -87,6 +105,7 @@ export interface CompanyData {
   // Calculated metrics
   profitability: ProfitabilityInfo
   cashFlow: CashFlowInfo
+  dividends: DividendInfo
 
   // Capital structure
   capitalRaises: CapitalRaise[]

@@ -172,5 +172,25 @@
       "currency": "AUD"
     }
   ],
-  "currentDebtToEquity": 0.74
+  "currentDebtToEquity": 0.74,
+  "dividends": {
+    "paysDividend": true,
+    "currentYield": 3.92,
+    "dividendHistory": [
+      { "year": 2015, "dividendPerShare": 1.23, "currency": "AUD" },
+      { "year": 2016, "dividendPerShare": 1.27, "currency": "AUD" },
+      { "year": 2017, "dividendPerShare": 1.31, "currency": "AUD" },
+      { "year": 2018, "dividendPerShare": 1.35, "currency": "AUD" },
+      { "year": 2019, "dividendPerShare": 1.40, "currency": "AUD" },
+      { "year": 2020, "dividendPerShare": 1.14, "currency": "AUD" },
+      { "year": 2021, "dividendPerShare": 1.17, "currency": "AUD" },
+      { "year": 2022, "dividendPerShare": 1.28, "currency": "AUD" },
+      { "year": 2023, "dividendPerShare": 1.35, "currency": "AUD" },
+      { "year": 2024, "dividendPerShare": 1.45, "currency": "AUD" }
+    ],
+    "payoutRatio": 70,
+    "dividendGrowthCAGR": 1.9,
+    "consecutiveYears": 10,
+    "currency": "AUD"
+  }
 }

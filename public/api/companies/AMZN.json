@@ -177,5 +177,10 @@
       "currency": "USD"
     }
   ],
-  "currentDebtToEquity": 0.67
+  "currentDebtToEquity": 0.67,
+  "dividends": {
+    "paysDividend": false,
+    "dividendHistory": [],
+    "currency": "USD"
+  }
 }

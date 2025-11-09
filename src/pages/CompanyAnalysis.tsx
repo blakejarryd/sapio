@@ -11,6 +11,7 @@ import {
   CashFlowStatus,
   FundingStructure,
   EfficiencyMetrics,
+  DividendInfo,
   PlainSummary
 } from '../components/company'
 import { Skeleton, SkeletonChart, SkeletonCard } from '../components/ui'
@@ -99,6 +100,9 @@ export default function CompanyAnalysis() {
             </div>
 
             {/* Efficiency Metrics Skeleton */}
+            <SkeletonCard />
+
+            {/* Dividend Info Skeleton */}
             <SkeletonCard />
 
             {/* Summary Skeleton */}
@@ -225,6 +229,9 @@ export default function CompanyAnalysis() {
 
           {/* Efficiency Metrics */}
           <EfficiencyMetrics financials={company.financials} />
+
+          {/* Dividend Information */}
+          <DividendInfo dividends={company.dividends} />
 
           {/* Plain English Summary */}
           <PlainSummary company={company} metrics={metrics} />

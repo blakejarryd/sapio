@@ -167,5 +167,25 @@
       "currency": "USD"
     }
   ],
-  "currentDebtToEquity": 0.09
+  "currentDebtToEquity": 0.09,
+  "dividends": {
+    "paysDividend": true,
+    "currentYield": 0.71,
+    "dividendHistory": [
+      { "year": 2015, "dividendPerShare": 1.29, "currency": "USD" },
+      { "year": 2016, "dividendPerShare": 1.44, "currency": "USD" },
+      { "year": 2017, "dividendPerShare": 1.56, "currency": "USD" },
+      { "year": 2018, "dividendPerShare": 1.68, "currency": "USD" },
+      { "year": 2019, "dividendPerShare": 1.84, "currency": "USD" },
+      { "year": 2020, "dividendPerShare": 2.04, "currency": "USD" },
+      { "year": 2021, "dividendPerShare": 2.24, "currency": "USD" },
+      { "year": 2022, "dividendPerShare": 2.48, "currency": "USD" },
+      { "year": 2023, "dividendPerShare": 2.72, "currency": "USD" },
+      { "year": 2024, "dividendPerShare": 3.00, "currency": "USD" }
+    ],
+    "payoutRatio": 25,
+    "dividendGrowthCAGR": 9.9,
+    "consecutiveYears": 10,
+    "currency": "USD"
+  }
 }

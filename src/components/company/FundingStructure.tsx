@@ -1,7 +1,8 @@
 import React from 'react'
 import { CapitalRaise } from '../../types/company'
-import { Card } from '../ui'
+import { Card, TooltipLabel } from '../ui'
 import { formatCurrency, formatDate } from '../../utils/formatters'
+import { tooltipContent } from '../../utils/tooltipContent'
 
 interface FundingStructureProps {
   debtToEquity: number
@@ -35,7 +36,11 @@ export const FundingStructure: React.FC<FundingStructureProps> = ({
       {/* Debt vs Equity */}
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-sm text-slate-600">Debt to Equity Ratio</span>
+          <TooltipLabel
+            label="Debt to Equity Ratio"
+            tooltip={tooltipContent.debtToEquity}
+            className="text-sm text-slate-600"
+          />
           <span className={`text-sm font-semibold ${debtLevel.color}`}>
             {debtLevel.label}
           </span>
@@ -64,9 +69,11 @@ export const FundingStructure: React.FC<FundingStructureProps> = ({
 
       {/* Capital Raising History */}
       <div>
-        <h4 className="text-sm font-semibold text-slate-900 mb-3">
-          Capital Raising History
-        </h4>
+        <TooltipLabel
+          label="Capital Raising History"
+          tooltip={tooltipContent.capitalRaise}
+          className="text-sm font-semibold text-slate-900 mb-3"
+        />
 
         {capitalRaises.length > 0 ? (
           <>

@@ -21,11 +21,27 @@ export function formatNumber(value: number): string {
 }
 
 /**
+ * Get currency symbol
+ */
+function getCurrencySymbol(currency: string): string {
+  const symbols: Record<string, string> = {
+    'USD': '$',
+    'AUD': 'A$',
+    'NZD': 'NZ$',
+    'EUR': '€',
+    'GBP': '£',
+    'JPY': '¥'
+  }
+  return symbols[currency] || currency + ' '
+}
+
+/**
  * Format currency values
  */
 export function formatCurrency(value: number, currency: string = 'USD'): string {
   const formatted = formatNumber(value)
-  return currency === 'USD' ? `$${formatted}` : `${formatted} ${currency}`
+  const symbol = getCurrencySymbol(currency)
+  return `${symbol}${formatted}`
 }
 
 /**
@@ -58,7 +74,7 @@ export function getGrowthColor(value: number): string {
 export function formatCurrencyFull(value: number, currency: string = 'USD'): string {
   const absValue = Math.abs(value)
   const sign = value < 0 ? '-' : ''
-  const symbol = currency === 'USD' ? '$' : currency + ' '
+  const symbol = getCurrencySymbol(currency)
 
   if (absValue >= 1_000_000_000) {
     return `${sign}${symbol}${(absValue / 1_000_000_000).toFixed(2)}B`

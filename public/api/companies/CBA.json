@@ -1,0 +1,176 @@
+{
+  "ticker": "CBA",
+  "companyName": "Commonwealth Bank of Australia",
+  "exchange": "ASX",
+  "currency": "AUD",
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "sector": "Financials",
+  "industry": "Banking",
+  "currentSharePrice": 118.50,
+  "marketCap": 195000000000,
+  "sharesOutstanding": 1645000000,
+  "businessModel": {
+    "description": "Commonwealth Bank is Australia's largest retail bank, providing financial services to individuals, businesses, and institutions. The bank generates revenue through net interest margins on loans (home loans, business loans), fees for banking services, wealth management, and insurance products. CBA operates the largest branch and ATM network in Australia.",
+    "founded": 1911,
+    "headquarters": "Sydney, New South Wales, Australia",
+    "employees": 48000,
+    "markets": ["Australia", "New Zealand", "Asia"],
+    "revenueStreams": [
+      {
+        "name": "Net interest income",
+        "description": "Margin on home loans, personal loans, business loans, and deposits",
+        "percentageOfRevenue": 72
+      },
+      {
+        "name": "Banking fees and commissions",
+        "description": "Account fees, transaction fees, merchant services",
+        "percentageOfRevenue": 15
+      },
+      {
+        "name": "Wealth management and insurance",
+        "description": "Superannuation, financial planning, general and life insurance",
+        "percentageOfRevenue": 8
+      },
+      {
+        "name": "Other banking services",
+        "description": "Foreign exchange, treasury services, investment products",
+        "percentageOfRevenue": 5
+      }
+    ],
+    "keyProducts": [
+      {
+        "name": "Home Loans",
+        "description": "Residential mortgages - largest home lender in Australia"
+      },
+      {
+        "name": "CommBank App",
+        "description": "Digital banking platform with 8M+ active users"
+      },
+      {
+        "name": "Business Banking",
+        "description": "Business loans, merchant services, transaction accounts"
+      },
+      {
+        "name": "Wealth Management",
+        "description": "Superannuation (Colonial First State), financial advice"
+      },
+      {
+        "name": "Insurance",
+        "description": "Home, car, and life insurance products"
+      }
+    ]
+  },
+  "financials": [
+    {
+      "year": 2015,
+      "revenue": 24076000000,
+      "earnings": 9137000000,
+      "operatingCashFlow": 15200000000,
+      "totalAssets": 869886000000,
+      "totalLiabilities": 814629000000,
+      "shareholderEquity": 55257000000
+    },
+    {
+      "year": 2016,
+      "revenue": 24110000000,
+      "earnings": 9450000000,
+      "operatingCashFlow": 14800000000,
+      "totalAssets": 925692000000,
+      "totalLiabilities": 866842000000,
+      "shareholderEquity": 58850000000
+    },
+    {
+      "year": 2017,
+      "revenue": 25131000000,
+      "earnings": 9928000000,
+      "operatingCashFlow": 16100000000,
+      "totalAssets": 960264000000,
+      "totalLiabilities": 897422000000,
+      "shareholderEquity": 62842000000
+    },
+    {
+      "year": 2018,
+      "revenue": 25812000000,
+      "earnings": 9826000000,
+      "operatingCashFlow": 15600000000,
+      "totalAssets": 990896000000,
+      "totalLiabilities": 925164000000,
+      "shareholderEquity": 65732000000
+    },
+    {
+      "year": 2019,
+      "revenue": 26025000000,
+      "earnings": 8571000000,
+      "operatingCashFlow": 14200000000,
+      "totalAssets": 1002611000000,
+      "totalLiabilities": 933987000000,
+      "shareholderEquity": 68624000000
+    },
+    {
+      "year": 2020,
+      "revenue": 24503000000,
+      "earnings": 7265000000,
+      "operatingCashFlow": 12800000000,
+      "totalAssets": 1083031000000,
+      "totalLiabilities": 1014287000000,
+      "shareholderEquity": 68744000000
+    },
+    {
+      "year": 2021,
+      "revenue": 24141000000,
+      "earnings": 8653000000,
+      "operatingCashFlow": 14500000000,
+      "totalAssets": 1130353000000,
+      "totalLiabilities": 1058626000000,
+      "shareholderEquity": 71727000000
+    },
+    {
+      "year": 2022,
+      "revenue": 26203000000,
+      "earnings": 9751000000,
+      "operatingCashFlow": 16200000000,
+      "totalAssets": 1176072000000,
+      "totalLiabilities": 1098321000000,
+      "shareholderEquity": 77751000000
+    },
+    {
+      "year": 2023,
+      "revenue": 28913000000,
+      "earnings": 10164000000,
+      "operatingCashFlow": 17100000000,
+      "totalAssets": 1237484000000,
+      "totalLiabilities": 1157869000000,
+      "shareholderEquity": 79615000000
+    },
+    {
+      "year": 2024,
+      "revenue": 31200000000,
+      "earnings": 10400000000,
+      "operatingCashFlow": 18000000000,
+      "totalAssets": 1290000000000,
+      "totalLiabilities": 1205000000000,
+      "shareholderEquity": 85000000000
+    }
+  ],
+  "profitability": {
+    "status": "profitable",
+    "consecutiveYears": 10,
+    "profitableSince": 2015
+  },
+  "cashFlow": {
+    "status": "generative",
+    "fiveYearTotal": 78600000000,
+    "currency": "AUD"
+  },
+  "capitalRaises": [
+    {
+      "date": "1991-09-12",
+      "type": "IPO",
+      "amountRaised": 1292000000,
+      "sharesBefore": 0,
+      "sharesAfter": 1260000000,
+      "currency": "AUD"
+    }
+  ],
+  "currentDebtToEquity": 0.07
+}

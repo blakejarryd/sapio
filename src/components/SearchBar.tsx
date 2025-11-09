@@ -13,9 +13,12 @@ export default function SearchBar({ isHeader = false, initialValue = '' }: Searc
   const navigate = useNavigate()
   const [query, setQuery] = useState(initialValue)
   const [results, setResults] = useState<CompanySearchResult[]>([])
+  const [filteredResults, setFilteredResults] = useState<CompanySearchResult[]>([])
   const [showResults, setShowResults] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [isFocused, setIsFocused] = useState(false)
+  const [exchangeFilter, setExchangeFilter] = useState<'all' | 'NASDAQ' | 'ASX'>('all')
+  const [selectedIndex, setSelectedIndex] = useState(-1)
 
   useEffect(() => {
     const searchTimeout = setTimeout(async () => {
@@ -40,6 +43,16 @@ export default function SearchBar({ isHeader = false, initialValue = '' }: Searc
     return () => clearTimeout(searchTimeout)
   }, [query, isFocused, initialValue])
 
+  // Filter results by exchange
+  useEffect(() => {
+    if (exchangeFilter === 'all') {
+      setFilteredResults(results)
+    } else {
+      setFilteredResults(results.filter(company => company.exchange === exchangeFilter))
+    }
+    setSelectedIndex(-1)
+  }, [results, exchangeFilter])
+
   const handleSelectCompany = (ticker: string) => {
     setShowResults(false)
     setIsFocused(false)
@@ -61,6 +74,33 @@ export default function SearchBar({ isHeader = false, initialValue = '' }: Searc
         setQuery(initialValue)
       }
     }, 200)
+  }
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (!showResults || filteredResults.length === 0) return
+
+    switch (e.key) {
+      case 'ArrowDown':
+        e.preventDefault()
+        setSelectedIndex(prev =>
+          prev < filteredResults.length - 1 ? prev + 1 : prev
+        )
+        break
+      case 'ArrowUp':
+        e.preventDefault()
+        setSelectedIndex(prev => prev > 0 ? prev - 1 : -1)
+        break
+      case 'Enter':
+        e.preventDefault()
+        if (selectedIndex >= 0 && selectedIndex < filteredResults.length) {
+          handleSelectCompany(filteredResults[selectedIndex].ticker)
+        }
+        break
+      case 'Escape':
+        setShowResults(false)
+        setSelectedIndex(-1)
+        break
+    }
   }
 
   const getStatusText = (status: string): string => {
@@ -129,6 +169,7 @@ export default function SearchBar({ isHeader = false, initialValue = '' }: Searc
             onChange={(e) => setQuery(e.target.value)}
             onFocus={handleFocus}
             onBlur={handleBlur}
+            onKeyDown={handleKeyDown}
             placeholder="Search by company name or ticker..."
             className={`w-full transition-colors ${
               isHeader
@@ -148,32 +189,70 @@ export default function SearchBar({ isHeader = false, initialValue = '' }: Searc
         {/* Search Results Dropdown */}
         {showResults && results.length > 0 && (
           <div
-            className={`absolute left-0 right-0 mt-2 max-h-80 overflow-y-auto bg-white border border-slate-200 rounded-lg shadow-lg z-50 ${
+            className={`absolute left-0 right-0 mt-2 bg-white border border-slate-200 rounded-lg shadow-lg z-50 ${
               isHeader ? 'max-w-7xl mx-auto' : ''
             }`}
           >
-            {results.map((company) => (
-              <button
-                key={company.ticker}
-                onClick={() => handleSelectCompany(company.ticker)}
-                className="w-full px-4 py-3 text-left hover:bg-slate-50 transition-colors border-b border-slate-100 last:border-b-0"
-              >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="font-semibold text-slate-900">
-                      {company.companyName} ({company.ticker})
-                    </div>
-                    <div className="text-sm text-slate-600">{company.industry}</div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <StatusIndicator type={getStatusType(company.profitabilityStatus)} />
-                    <span className="text-xs text-slate-500">
-                      {getStatusText(company.profitabilityStatus)}
-                    </span>
-                  </div>
+            {/* Exchange Filter */}
+            {results.length > 1 && (
+              <div className="flex items-center gap-2 px-4 py-2 border-b border-slate-200 bg-slate-50">
+                <span className="text-xs text-slate-600 font-medium">Filter by exchange:</span>
+                <div className="flex gap-1">
+                  {(['all', 'NASDAQ', 'ASX'] as const).map((exchange) => (
+                    <button
+                      key={exchange}
+                      onClick={() => setExchangeFilter(exchange)}
+                      className={`px-2 py-1 text-xs rounded transition-colors ${
+                        exchangeFilter === exchange
+                          ? 'bg-slate-900 text-white font-medium'
+                          : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
+                      }`}
+                    >
+                      {exchange === 'all' ? 'All' : exchange}
+                    </button>
+                  ))}
                 </div>
-              </button>
-            ))}
+              </div>
+            )}
+
+            {/* Results List */}
+            <div className="max-h-80 overflow-y-auto">
+              {filteredResults.length > 0 ? (
+                filteredResults.map((company, index) => (
+                  <button
+                    key={company.ticker}
+                    onClick={() => handleSelectCompany(company.ticker)}
+                    className={`w-full px-4 py-3 text-left transition-colors border-b border-slate-100 last:border-b-0 ${
+                      index === selectedIndex ? 'bg-accent/10' : 'hover:bg-slate-50'
+                    }`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2">
+                          <span className="font-semibold text-slate-900">
+                            {company.companyName} ({company.ticker})
+                          </span>
+                          <span className="px-1.5 py-0.5 text-xs font-semibold rounded bg-slate-100 text-slate-700">
+                            {company.exchange}
+                          </span>
+                        </div>
+                        <div className="text-sm text-slate-600">{company.industry}</div>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <StatusIndicator type={getStatusType(company.profitabilityStatus)} />
+                        <span className="text-xs text-slate-500">
+                          {getStatusText(company.profitabilityStatus)}
+                        </span>
+                      </div>
+                    </div>
+                  </button>
+                ))
+              ) : (
+                <div className="px-4 py-3 text-sm text-slate-500 text-center">
+                  No companies found for {exchangeFilter} exchange
+                </div>
+              )}
+            </div>
           </div>
         )}
 

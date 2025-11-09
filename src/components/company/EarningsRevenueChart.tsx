@@ -11,8 +11,9 @@ import {
   Legend
 } from 'recharts'
 import { AnnualFinancials } from '../../types/company'
-import { Card } from '../ui'
+import { Card, TooltipLabel } from '../ui'
 import { formatCurrency } from '../../utils/formatters'
+import { tooltipContent } from '../../utils/tooltipContent'
 
 interface EarningsRevenueChartProps {
   financials: AnnualFinancials[]
@@ -76,18 +77,22 @@ export const EarningsRevenueChart: React.FC<EarningsRevenueChartProps> = ({
 
   return (
     <Card className="col-span-full">
-      <div className="flex items-start justify-between mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
         <div>
-          <h2 className="text-h2 text-slate-900 mb-2">
+          <h2 className="text-xl sm:text-2xl font-semibold text-slate-900 mb-2">
             Revenue & Earnings History
           </h2>
           <p className="text-sm text-slate-600">
             10-year financial performance showing actual business results
           </p>
         </div>
-        <div className="text-right">
-          <div className="text-sm text-slate-600 mb-1">Growth Rates</div>
-          <div className="flex gap-4 text-sm">
+        <div className="text-left sm:text-right">
+          <TooltipLabel
+            label="Growth Rates"
+            tooltip={tooltipContent.cagr}
+            className="text-sm text-slate-600 mb-1"
+          />
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm">
             <div>
               <span className="text-slate-500">Revenue CAGR: </span>
               <span className="font-mono font-semibold text-slate-900">
@@ -106,7 +111,7 @@ export const EarningsRevenueChart: React.FC<EarningsRevenueChartProps> = ({
         </div>
       </div>
 
-      <div className="h-96">
+      <div className="h-64 sm:h-80 md:h-96">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={chartData}

@@ -18,8 +18,12 @@ export async function searchCompanies(query: string): Promise<CompanySearchResul
 
   try {
     const response = await fetch(`${API_BASE_URL}/companies.json`)
+
     if (!response.ok) {
-      throw new Error('Failed to fetch companies')
+      if (response.status >= 500) {
+        throw new Error('Server error: Unable to load company list. Please try again later.')
+      }
+      throw new Error(`Failed to fetch companies (HTTP ${response.status})`)
     }
 
     const companies: CompanySearchResult[] = await response.json()
@@ -36,8 +40,18 @@ export async function searchCompanies(query: string): Promise<CompanySearchResul
         company.companyName.toLowerCase().includes(lowerQuery)
     )
   } catch (error) {
+    // Re-throw if it's already our formatted error
+    if (error instanceof Error && error.message.includes('Server error')) {
+      throw error
+    }
+
+    // Handle network errors
+    if (error instanceof TypeError && error.message.includes('fetch')) {
+      throw new Error('Network error: Unable to connect to the server. Please check your internet connection.')
+    }
+
     console.error('Error searching companies:', error)
-    throw error
+    throw new Error(`Failed to search companies. ${error instanceof Error ? error.message : 'Unknown error'}`)
   }
 }
 
@@ -49,15 +63,32 @@ export async function fetchCompanyData(ticker: string): Promise<CompanyData> {
 
   try {
     const response = await fetch(`${API_BASE_URL}/companies/${ticker}.json`)
+
     if (!response.ok) {
-      throw new Error(`Failed to fetch data for ${ticker}`)
+      if (response.status === 404) {
+        throw new Error(`Company with ticker "${ticker.toUpperCase()}" not found (404). Please verify the ticker symbol.`)
+      }
+      if (response.status >= 500) {
+        throw new Error(`Server error (${response.status}). Please try again later.`)
+      }
+      throw new Error(`Failed to fetch data for ${ticker} (HTTP ${response.status})`)
     }
 
     const data: CompanyData = await response.json()
     return data
   } catch (error) {
+    // Re-throw if it's already our formatted error
+    if (error instanceof Error && (error.message.includes('404') || error.message.includes('Server error'))) {
+      throw error
+    }
+
+    // Handle network errors
+    if (error instanceof TypeError && error.message.includes('fetch')) {
+      throw new Error('Network error: Unable to connect to the server. Please check your internet connection.')
+    }
+
     console.error(`Error fetching company data for ${ticker}:`, error)
-    throw error
+    throw new Error(`Failed to load company data. ${error instanceof Error ? error.message : 'Unknown error'}`)
   }
 }
 

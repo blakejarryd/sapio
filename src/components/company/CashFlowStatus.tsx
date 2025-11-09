@@ -1,7 +1,8 @@
 import React from 'react'
 import { AnnualFinancials, CashFlowInfo } from '../../types/company'
-import { Card, StatusIndicator } from '../ui'
+import { Card, StatusIndicator, TooltipLabel } from '../ui'
 import { formatCurrency } from '../../utils/formatters'
+import { tooltipContent } from '../../utils/tooltipContent'
 import {
   BarChart,
   Bar,
@@ -60,7 +61,11 @@ export const CashFlowStatus: React.FC<CashFlowStatusProps> = ({
       <div className="flex items-start gap-3 mb-4">
         <StatusIndicator type={getStatusType()} size={12} className="mt-1" />
         <div>
-          <h3 className="text-h3 text-slate-900 mb-1">Cash Flow Status</h3>
+          <TooltipLabel
+            label="Cash Flow Status"
+            tooltip={tooltipContent.cashFlow}
+            className="text-h3 text-slate-900 mb-1"
+          />
           <p className="text-sm text-slate-700">{getStatusText()}</p>
         </div>
       </div>

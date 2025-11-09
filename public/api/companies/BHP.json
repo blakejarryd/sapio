@@ -1,0 +1,172 @@
+{
+  "ticker": "BHP",
+  "companyName": "BHP Group Limited",
+  "exchange": "ASX",
+  "currency": "AUD",
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "sector": "Basic Materials",
+  "industry": "Mining",
+  "currentSharePrice": 43.20,
+  "marketCap": 215000000000,
+  "sharesOutstanding": 4977000000,
+  "businessModel": {
+    "description": "BHP is the world's largest mining company, extracting and processing iron ore, copper, coal, and other commodities. The company sells bulk commodities to steel mills and manufacturers globally, with revenue heavily dependent on commodity prices. BHP operates large-scale, low-cost mines in Australia, Chile, and North America.",
+    "founded": 1885,
+    "headquarters": "Melbourne, Victoria, Australia",
+    "employees": 79700,
+    "markets": ["Global - sells to China, Japan, South Korea, Europe, and Americas"],
+    "revenueStreams": [
+      {
+        "name": "Iron ore",
+        "description": "Mining and export of iron ore to steel manufacturers",
+        "percentageOfRevenue": 54
+      },
+      {
+        "name": "Copper",
+        "description": "Copper mining from Chile and Australia",
+        "percentageOfRevenue": 27
+      },
+      {
+        "name": "Metallurgical coal",
+        "description": "Coking coal for steel production",
+        "percentageOfRevenue": 10
+      },
+      {
+        "name": "Nickel and other minerals",
+        "description": "Nickel, potash, and other commodities",
+        "percentageOfRevenue": 9
+      }
+    ],
+    "keyProducts": [
+      {
+        "name": "Pilbara Iron Ore",
+        "description": "World-class iron ore operations in Western Australia"
+      },
+      {
+        "name": "Escondida Copper",
+        "description": "Largest copper mine globally, located in Chile"
+      },
+      {
+        "name": "Queensland Coal",
+        "description": "Metallurgical coal for steelmaking"
+      },
+      {
+        "name": "Olympic Dam",
+        "description": "Copper, uranium, gold, and silver mine in South Australia"
+      }
+    ]
+  },
+  "financials": [
+    {
+      "year": 2015,
+      "revenue": 44636000000,
+      "earnings": -5674000000,
+      "operatingCashFlow": 16229000000,
+      "totalAssets": 133256000000,
+      "totalLiabilities": 52844000000,
+      "shareholderEquity": 80412000000
+    },
+    {
+      "year": 2016,
+      "revenue": 30912000000,
+      "earnings": -6385000000,
+      "operatingCashFlow": 13357000000,
+      "totalAssets": 120253000000,
+      "totalLiabilities": 45684000000,
+      "shareholderEquity": 74569000000
+    },
+    {
+      "year": 2017,
+      "revenue": 38261000000,
+      "earnings": 3242000000,
+      "operatingCashFlow": 19584000000,
+      "totalAssets": 120671000000,
+      "totalLiabilities": 45871000000,
+      "shareholderEquity": 74800000000
+    },
+    {
+      "year": 2018,
+      "revenue": 43638000000,
+      "earnings": 5872000000,
+      "operatingCashFlow": 22147000000,
+      "totalAssets": 117619000000,
+      "totalLiabilities": 44295000000,
+      "shareholderEquity": 73324000000
+    },
+    {
+      "year": 2019,
+      "revenue": 43961000000,
+      "earnings": 4008000000,
+      "operatingCashFlow": 19721000000,
+      "totalAssets": 113210000000,
+      "totalLiabilities": 43618000000,
+      "shareholderEquity": 69592000000
+    },
+    {
+      "year": 2020,
+      "revenue": 42930000000,
+      "earnings": 8003000000,
+      "operatingCashFlow": 24023000000,
+      "totalAssets": 113741000000,
+      "totalLiabilities": 43952000000,
+      "shareholderEquity": 69789000000
+    },
+    {
+      "year": 2021,
+      "revenue": 60804000000,
+      "earnings": 11304000000,
+      "operatingCashFlow": 34189000000,
+      "totalAssets": 131576000000,
+      "totalLiabilities": 45692000000,
+      "shareholderEquity": 85884000000
+    },
+    {
+      "year": 2022,
+      "revenue": 65094000000,
+      "earnings": 21314000000,
+      "operatingCashFlow": 41264000000,
+      "totalAssets": 145281000000,
+      "totalLiabilities": 47623000000,
+      "shareholderEquity": 97658000000
+    },
+    {
+      "year": 2023,
+      "revenue": 55545000000,
+      "earnings": 13399000000,
+      "operatingCashFlow": 29748000000,
+      "totalAssets": 142516000000,
+      "totalLiabilities": 46891000000,
+      "shareholderEquity": 95625000000
+    },
+    {
+      "year": 2024,
+      "revenue": 52000000000,
+      "earnings": 11200000000,
+      "operatingCashFlow": 26500000000,
+      "totalAssets": 140000000000,
+      "totalLiabilities": 46000000000,
+      "shareholderEquity": 94000000000
+    }
+  ],
+  "profitability": {
+    "status": "intermittent",
+    "profitableYearsCount": 7,
+    "totalYears": 10
+  },
+  "cashFlow": {
+    "status": "generative",
+    "fiveYearTotal": 155724000000,
+    "currency": "AUD"
+  },
+  "capitalRaises": [
+    {
+      "date": "2001-06-29",
+      "type": "Other",
+      "amountRaised": 3400000000,
+      "sharesBefore": 2500000000,
+      "sharesAfter": 2700000000,
+      "currency": "AUD"
+    }
+  ],
+  "currentDebtToEquity": 0.12
+}

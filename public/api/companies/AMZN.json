@@ -5,94 +5,177 @@
   "currency": "USD",
   "lastUpdated": "2025-01-15T00:00:00Z",
   "sector": "Consumer Cyclical",
-  "industry": "Internet Retail",
-  "metrics": {
-    "marketCap": {
-      "value": 1740000000000,
-      "displayValue": "$1.7T",
-      "description": "The total value of all company shares",
-      "historical": [
-        { "year": 2020, "value": 1635000000000 },
-        { "year": 2021, "value": 1690000000000 },
-        { "year": 2022, "value": 859000000000 },
-        { "year": 2023, "value": 1540000000000 },
-        { "year": 2024, "value": 1740000000000 }
-      ]
+  "industry": "E-commerce & Cloud Computing",
+  "currentSharePrice": 178.30,
+  "marketCap": 1870000000000,
+  "sharesOutstanding": 10490000000,
+  "businessModel": {
+    "description": "Amazon operates the world's largest e-commerce marketplace and cloud computing platform. The company sells products directly and through third-party sellers, taking commissions on marketplace sales. Amazon Web Services (AWS) provides cloud infrastructure generating the majority of operating profit despite being a smaller portion of revenue.",
+    "founded": 1994,
+    "headquarters": "Seattle, Washington, USA",
+    "employees": 1540000,
+    "markets": ["North America", "Europe", "Asia Pacific", "Middle East", "Latin America"],
+    "revenueStreams": [
+      {
+        "name": "Online stores",
+        "description": "Direct product sales through Amazon.com",
+        "percentageOfRevenue": 38
+      },
+      {
+        "name": "Amazon Web Services (AWS)",
+        "description": "Cloud computing infrastructure and services",
+        "percentageOfRevenue": 16
+      },
+      {
+        "name": "Third-party seller services",
+        "description": "Commissions, fulfillment fees, and advertising from marketplace sellers",
+        "percentageOfRevenue": 23
+      },
+      {
+        "name": "Advertising and subscriptions",
+        "description": "Prime memberships, digital advertising, Prime Video, Music",
+        "percentageOfRevenue": 13
+      },
+      {
+        "name": "Physical stores and other",
+        "description": "Whole Foods, Amazon Fresh, and other retail",
+        "percentageOfRevenue": 10
+      }
+    ],
+    "keyProducts": [
+      {
+        "name": "Amazon Marketplace",
+        "description": "E-commerce platform with 200M+ Prime members globally"
+      },
+      {
+        "name": "Amazon Web Services (AWS)",
+        "description": "Market-leading cloud infrastructure (32% market share)"
+      },
+      {
+        "name": "Prime",
+        "description": "Subscription service with free shipping, streaming, and exclusive deals"
+      },
+      {
+        "name": "Amazon Advertising",
+        "description": "Fast-growing digital advertising business"
+      },
+      {
+        "name": "Whole Foods",
+        "description": "Grocery retail chain acquired in 2017"
+      }
+    ]
+  },
+  "financials": [
+    {
+      "year": 2015,
+      "revenue": 107006000000,
+      "earnings": 596000000,
+      "operatingCashFlow": 11920000000,
+      "totalAssets": 64747000000,
+      "totalLiabilities": 50762000000,
+      "shareholderEquity": 13985000000
     },
-    "revenue": {
-      "value": 574785000000,
-      "displayValue": "$574.8B",
-      "description": "Total money the company earned from sales",
-      "historical": [
-        { "year": 2020, "value": 386064000000 },
-        { "year": 2021, "value": 469822000000 },
-        { "year": 2022, "value": 513983000000 },
-        { "year": 2023, "value": 574785000000 },
-        { "year": 2024, "value": 574785000000 }
-      ]
+    {
+      "year": 2016,
+      "revenue": 135987000000,
+      "earnings": 2371000000,
+      "operatingCashFlow": 17272000000,
+      "totalAssets": 83402000000,
+      "totalLiabilities": 64117000000,
+      "shareholderEquity": 19285000000
     },
-    "salesGrowth": {
-      "value": 11.8,
-      "displayValue": "+11.8%",
-      "description": "How much sales increased compared to last year",
-      "industryAverage": 10.3,
-      "historical": [
-        { "year": 2020, "value": 37.6 },
-        { "year": 2021, "value": 21.7 },
-        { "year": 2022, "value": 9.4 },
-        { "year": 2023, "value": 11.8 },
-        { "year": 2024, "value": 11.8 }
-      ]
+    {
+      "year": 2017,
+      "revenue": 177866000000,
+      "earnings": 3033000000,
+      "operatingCashFlow": 18434000000,
+      "totalAssets": 131310000000,
+      "totalLiabilities": 103601000000,
+      "shareholderEquity": 27709000000
     },
-    "netIncome": {
-      "value": 30425000000,
-      "displayValue": "$30.4B",
-      "description": "The profit left after all expenses",
-      "historical": [
-        { "year": 2020, "value": 21331000000 },
-        { "year": 2021, "value": 33364000000 },
-        { "year": 2022, "value": -2722000000 },
-        { "year": 2023, "value": 30425000000 },
-        { "year": 2024, "value": 30425000000 }
-      ]
+    {
+      "year": 2018,
+      "revenue": 232887000000,
+      "earnings": 10073000000,
+      "operatingCashFlow": 30723000000,
+      "totalAssets": 162648000000,
+      "totalLiabilities": 119099000000,
+      "shareholderEquity": 43549000000
     },
-    "profitMargin": {
-      "value": 5.3,
-      "displayValue": "5.3%",
-      "description": "What percentage of sales becomes profit",
-      "industryAverage": 4.8,
-      "historical": [
-        { "year": 2020, "value": 5.5 },
-        { "year": 2021, "value": 7.1 },
-        { "year": 2022, "value": -0.5 },
-        { "year": 2023, "value": 5.3 },
-        { "year": 2024, "value": 5.3 }
-      ]
+    {
+      "year": 2019,
+      "revenue": 280522000000,
+      "earnings": 11588000000,
+      "operatingCashFlow": 38514000000,
+      "totalAssets": 225248000000,
+      "totalLiabilities": 163188000000,
+      "shareholderEquity": 62060000000
     },
-    "totalDebt": {
-      "value": 135610000000,
-      "displayValue": "$135.6B",
-      "description": "Total money the company owes",
-      "historical": [
-        { "year": 2020, "value": 93735000000 },
-        { "year": 2021, "value": 118723000000 },
-        { "year": 2022, "value": 136555000000 },
-        { "year": 2023, "value": 135610000000 },
-        { "year": 2024, "value": 135610000000 }
-      ]
+    {
+      "year": 2020,
+      "revenue": 386064000000,
+      "earnings": 21331000000,
+      "operatingCashFlow": 66064000000,
+      "totalAssets": 321195000000,
+      "totalLiabilities": 227791000000,
+      "shareholderEquity": 93404000000
     },
-    "peRatio": {
-      "value": 57.2,
-      "displayValue": "57.2",
-      "description": "How much investors pay for each dollar of earnings",
-      "industryAverage": 32.5,
-      "historical": [
-        { "year": 2020, "value": 76.7 },
-        { "year": 2021, "value": 50.6 },
-        { "year": 2022, "value": -315.5 },
-        { "year": 2023, "value": 50.6 },
-        { "year": 2024, "value": 57.2 }
-      ]
+    {
+      "year": 2021,
+      "revenue": 469822000000,
+      "earnings": 33364000000,
+      "operatingCashFlow": 46327000000,
+      "totalAssets": 420549000000,
+      "totalLiabilities": 282304000000,
+      "shareholderEquity": 138245000000
+    },
+    {
+      "year": 2022,
+      "revenue": 513983000000,
+      "earnings": -2722000000,
+      "operatingCashFlow": 46752000000,
+      "totalAssets": 462675000000,
+      "totalLiabilities": 318064000000,
+      "shareholderEquity": 144611000000
+    },
+    {
+      "year": 2023,
+      "revenue": 574785000000,
+      "earnings": 30425000000,
+      "operatingCashFlow": 84946000000,
+      "totalAssets": 527854000000,
+      "totalLiabilities": 356344000000,
+      "shareholderEquity": 171510000000
+    },
+    {
+      "year": 2024,
+      "revenue": 620000000000,
+      "earnings": 42000000000,
+      "operatingCashFlow": 102000000000,
+      "totalAssets": 580000000000,
+      "totalLiabilities": 390000000000,
+      "shareholderEquity": 190000000000
     }
-  }
+  ],
+  "profitability": {
+    "status": "intermittent",
+    "profitableYearsCount": 8,
+    "totalYears": 10
+  },
+  "cashFlow": {
+    "status": "generative",
+    "fiveYearTotal": 346089000000,
+    "currency": "USD"
+  },
+  "capitalRaises": [
+    {
+      "date": "1997-05-15",
+      "type": "IPO",
+      "amountRaised": 54000000,
+      "sharesBefore": 0,
+      "sharesAfter": 3000000,
+      "currency": "USD"
+    }
+  ],
+  "currentDebtToEquity": 0.67
 }

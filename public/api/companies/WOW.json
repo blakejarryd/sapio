@@ -1,0 +1,176 @@
+{
+  "ticker": "WOW",
+  "companyName": "Woolworths Group Limited",
+  "exchange": "ASX",
+  "currency": "AUD",
+  "lastUpdated": "2025-01-15T00:00:00Z",
+  "sector": "Consumer Defensive",
+  "industry": "Retail - Supermarkets",
+  "currentSharePrice": 37.80,
+  "marketCap": 45000000000,
+  "sharesOutstanding": 1190000000,
+  "businessModel": {
+    "description": "Woolworths operates supermarkets, liquor stores, and hotels across Australia and New Zealand. The company generates revenue primarily through retail sales of food, groceries, and alcohol to consumers. Woolworths is Australia's largest supermarket chain with over 1,000 stores and strong private label brands.",
+    "founded": 1924,
+    "headquarters": "Bella Vista, New South Wales, Australia",
+    "employees": 200000,
+    "markets": ["Australia", "New Zealand"],
+    "revenueStreams": [
+      {
+        "name": "Australian food retail",
+        "description": "Woolworths supermarkets in Australia",
+        "percentageOfRevenue": 77
+      },
+      {
+        "name": "New Zealand supermarkets",
+        "description": "Countdown stores",
+        "percentageOfRevenue": 11
+      },
+      {
+        "name": "BIG W retail",
+        "description": "Discount department stores",
+        "percentageOfRevenue": 7
+      },
+      {
+        "name": "Hotels and liquor",
+        "description": "ALH Group pubs and BWS/Dan Murphy's stores",
+        "percentageOfRevenue": 5
+      }
+    ],
+    "keyProducts": [
+      {
+        "name": "Woolworths supermarkets",
+        "description": "Groceries, fresh food, and household goods"
+      },
+      {
+        "name": "Countdown",
+        "description": "New Zealand supermarket chain"
+      },
+      {
+        "name": "BWS & Dan Murphy's",
+        "description": "Liquor retail stores"
+      },
+      {
+        "name": "BIG W",
+        "description": "Discount department store chain"
+      },
+      {
+        "name": "Woolworths brands",
+        "description": "Private label products (Macro, Essentials)"
+      }
+    ]
+  },
+  "financials": [
+    {
+      "year": 2015,
+      "revenue": 58761000000,
+      "earnings": 2146000000,
+      "operatingCashFlow": 4256000000,
+      "totalAssets": 28945000000,
+      "totalLiabilities": 18234000000,
+      "shareholderEquity": 10711000000
+    },
+    {
+      "year": 2016,
+      "revenue": 60522000000,
+      "earnings": 2281000000,
+      "operatingCashFlow": 4502000000,
+      "totalAssets": 29876000000,
+      "totalLiabilities": 18932000000,
+      "shareholderEquity": 10944000000
+    },
+    {
+      "year": 2017,
+      "revenue": 56718000000,
+      "earnings": 2019000000,
+      "operatingCashFlow": 4123000000,
+      "totalAssets": 27654000000,
+      "totalLiabilities": 17456000000,
+      "shareholderEquity": 10198000000
+    },
+    {
+      "year": 2018,
+      "revenue": 56664000000,
+      "earnings": 1534000000,
+      "operatingCashFlow": 3789000000,
+      "totalAssets": 27123000000,
+      "totalLiabilities": 17234000000,
+      "shareholderEquity": 9889000000
+    },
+    {
+      "year": 2019,
+      "revenue": 57695000000,
+      "earnings": 1720000000,
+      "operatingCashFlow": 4012000000,
+      "totalAssets": 27892000000,
+      "totalLiabilities": 17643000000,
+      "shareholderEquity": 10249000000
+    },
+    {
+      "year": 2020,
+      "revenue": 63680000000,
+      "earnings": 1957000000,
+      "operatingCashFlow": 4512000000,
+      "totalAssets": 31234000000,
+      "totalLiabilities": 19876000000,
+      "shareholderEquity": 11358000000
+    },
+    {
+      "year": 2021,
+      "revenue": 67355000000,
+      "earnings": 1979000000,
+      "operatingCashFlow": 4834000000,
+      "totalAssets": 33567000000,
+      "totalLiabilities": 21234000000,
+      "shareholderEquity": 12333000000
+    },
+    {
+      "year": 2022,
+      "revenue": 67653000000,
+      "earnings": 1512000000,
+      "operatingCashFlow": 4123000000,
+      "totalAssets": 34123000000,
+      "totalLiabilities": 21678000000,
+      "shareholderEquity": 12445000000
+    },
+    {
+      "year": 2023,
+      "revenue": 69348000000,
+      "earnings": 1617000000,
+      "operatingCashFlow": 4567000000,
+      "totalAssets": 35234000000,
+      "totalLiabilities": 22345000000,
+      "shareholderEquity": 12889000000
+    },
+    {
+      "year": 2024,
+      "revenue": 72000000000,
+      "earnings": 1800000000,
+      "operatingCashFlow": 4900000000,
+      "totalAssets": 37000000000,
+      "totalLiabilities": 23500000000,
+      "shareholderEquity": 13500000000
+    }
+  ],
+  "profitability": {
+    "status": "profitable",
+    "consecutiveYears": 10,
+    "profitableSince": 2015
+  },
+  "cashFlow": {
+    "status": "generative",
+    "fiveYearTotal": 22936000000,
+    "currency": "AUD"
+  },
+  "capitalRaises": [
+    {
+      "date": "1993-08-30",
+      "type": "IPO",
+      "amountRaised": 250000000,
+      "sharesBefore": 0,
+      "sharesAfter": 500000000,
+      "currency": "AUD"
+    }
+  ],
+  "currentDebtToEquity": 0.74
+}

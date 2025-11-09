@@ -97,6 +97,7 @@ export interface CompanyData {
 export interface CompanySearchResult {
   ticker: string
   companyName: string
+  exchange: string
   industry: string
   profitabilityStatus: ProfitabilityStatus
 }

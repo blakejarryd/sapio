@@ -1,8 +1,9 @@
 import React from 'react'
 import { AnnualFinancials } from '../../types/company'
-import { Card } from '../ui'
+import { Card, TooltipLabel } from '../ui'
 import { calculateROE, calculateAverageROE } from '../../utils/calculations'
 import { calculateProfitMargin } from '../../utils/calculations'
+import { tooltipContent } from '../../utils/tooltipContent'
 import {
   LineChart,
   Line,
@@ -57,9 +58,11 @@ export const EfficiencyMetrics: React.FC<EfficiencyMetricsProps> = ({
         <div>
           <div className="mb-4">
             <div className="flex items-baseline justify-between mb-2">
-              <h4 className="text-base font-semibold text-slate-900">
-                Return on Equity (ROE)
-              </h4>
+              <TooltipLabel
+                label="Return on Equity (ROE)"
+                tooltip={tooltipContent.roe}
+                className="text-base font-semibold text-slate-900"
+              />
               <span className={`text-sm font-semibold ${roeAssessment.color}`}>
                 {roeAssessment.label}
               </span>
@@ -121,9 +124,11 @@ export const EfficiencyMetrics: React.FC<EfficiencyMetricsProps> = ({
         {/* Profit Margin */}
         <div>
           <div className="mb-4">
-            <h4 className="text-base font-semibold text-slate-900 mb-2">
-              Net Profit Margin
-            </h4>
+            <TooltipLabel
+              label="Net Profit Margin"
+              tooltip={tooltipContent.profitMargin}
+              className="text-base font-semibold text-slate-900 mb-2"
+            />
             <div className="flex items-baseline gap-3">
               <span className="text-4xl font-mono font-bold text-slate-900">
                 {currentMargin.toFixed(1)}%

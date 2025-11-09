@@ -8,12 +8,11 @@ interface BusinessOverviewProps {
 }
 
 export const BusinessOverview: React.FC<BusinessOverviewProps> = ({
-  businessModel,
-  currency
+  businessModel
 }) => {
   return (
     <Card>
-      <h2 className="text-h3 text-slate-900 mb-4">Business Overview</h2>
+      <h2 className="text-lg sm:text-xl font-semibold text-slate-900 mb-4">Business Overview</h2>
 
       {/* Company Description */}
       <p className="text-base text-slate-700 leading-relaxed mb-6">
@@ -49,7 +48,7 @@ export const BusinessOverview: React.FC<BusinessOverviewProps> = ({
       </div>
 
       {/* Revenue Model and Products Grid */}
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
         {/* Revenue Model */}
         <div>
           <h3 className="text-base font-semibold text-slate-900 mb-3">
